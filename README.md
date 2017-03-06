@@ -1,3 +1,7 @@
+# Clone repository
+
+    $ git clone --recursive https://github.com/h/thunderhill-racing
+
 # Setup Instructions
 
 ## Install Bazel
