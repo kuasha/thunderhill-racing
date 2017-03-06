@@ -1,0 +1,9 @@
+cc_binary(
+  name='HelloWorldSubscriber',
+  srcs=['HelloWorldSubscriber.cpp'],
+  deps=[
+    '@polysync//:polysync',
+    '@org_tensorflow//tensorflow/core:tensorflow',
+    '@org_tensorflow//tensorflow/cc:ops',
+  ],
+)
