@@ -18,9 +18,13 @@ See [full instructions here](https://bazel.build/versions/master/docs/install.ht
     $ cd tensorflow
     $ ./configure
 
-## Build & run the example code
+## Run the example code
 
-This will take a long time the first time you build the TensorFlow libraries.
+This will take a long time the first time you build the TensorFlow libraries. Subsequent builds are much faster.
 
     $ bazel run //HelloWorldSubscriber:HelloWorldSubscriber
+
+## Optional: Building TensorFlow with GPU / CUDA
+
+This guide explains [how to build TensorFlow with GPU / CUDA support](https://alliseesolutions.wordpress.com/2016/09/08/install-gpu-tensorflow-from-sources-w-ubuntu-16-04-and-cuda-8-0-rc/). Note: We haven't tried this yet.
 
