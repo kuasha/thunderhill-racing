@@ -35,8 +35,7 @@ cc_library(
   hdrs=glob([
     'include/*.h*',
     'include/deps/*.h*',
-    'include/deps/dcps/C/SAC/*.h*',
-    'include/deps/sys/*.h*',
+    'include/deps/**/*.h*',
     'pdm/*.h*',
     'vendor/include/*.h*',
     'vendor/include/glib-2.0/*.h*',
