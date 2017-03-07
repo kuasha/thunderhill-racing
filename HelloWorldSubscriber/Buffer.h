@@ -23,7 +23,7 @@ private:
 
 	T * buffer;
 	unsigned short maxSize;
-	pthread_mutex_t mutex;
+	//pthread_mutex_t mutex;
 	void increaseWritePosition(){
 
 		writePosition ++;
@@ -76,42 +76,46 @@ public:
 		delete this->buffer;
 	}
 
-	void push(T & t){
-		pthread_mutex_lock(&mutex);
+	void push(const T & t){
 		T newT = T(t);
+		//pthread_mutex_lock(&mutex);
 		buffer[writePosition] = newT;
 		increaseWritePosition();
-		pthread_mutex_unlock(&mutex);
+		//pthread_mutex_unlock(&mutex);
 
 	}
 
 	T pull(){
-		pthread_mutex_lock(&mutex);
-
-		T output = buffer[readPosition];
-
-		if(hasData()) increaseReadPosition();
-		pthread_mutex_unlock(&mutex);
+		//pthread_mutex_lock(&mutex);
+		T output;
+		if(hasData()){
+			output = buffer[readPosition];
+			increaseReadPosition();
+		} else {
+			output = T();
+		}
+		//pthread_mutex_unlock(&mutex);
 
 
 		return output;
 	}
 
 	T pullYoungest(){
-		pthread_mutex_lock(&mutex);
-
-
+		//pthread_mutex_lock(&mutex);
 		T output;
-		decreaseWritePosition();
-		output = buffer[writePosition];
-		pthread_mutex_unlock(&mutex);
+		if(hasData()){
+			decreaseWritePosition();
+			output = buffer[writePosition];
+		}
+		else output = T();
+		//pthread_mutex_unlock(&mutex);
 		return output;
 	}
 
 	void clear(){
-		pthread_mutex_lock(&mutex);
+		//pthread_mutex_lock(&mutex);
 		readPosition = writePosition;
-		pthread_mutex_unlock(&mutex);
+		//pthread_mutex_unlock(&mutex);
 	}
 
 	unsigned short getMaxSize(){
@@ -122,7 +126,7 @@ public:
 	}
 
 	unsigned short getSize(){
-		pthread_mutex_lock(&mutex);
+		//pthread_mutex_lock(&mutex);
 
 		unsigned short output = 0;
 
@@ -136,20 +140,20 @@ public:
 			output = maxSize - (readPosition - writePosition);
 
 		}
-		pthread_mutex_unlock(&mutex);
+		//pthread_mutex_unlock(&mutex);
 
 
 		return output;
 	}
 
 	bool hasData(){
-		pthread_mutex_lock(&mutex);
+		//pthread_mutex_lock(&mutex);
 
 		bool output = true;
 
 
 		if(readPosition == writePosition) output = false;
-		pthread_mutex_unlock(&mutex);
+		//pthread_mutex_unlock(&mutex);
 
 
 		return output;
@@ -158,7 +162,7 @@ public:
 
 
 	unsigned short getContent(T * t){
-		pthread_mutex_lock(&mutex);
+		//pthread_mutex_lock(&mutex);
 
 		unsigned short newIndex = 0;
 
@@ -174,7 +178,7 @@ public:
 				ringBufferIndex = 0;
 			}
 		}
-		pthread_mutex_unlock(&mutex);
+		//pthread_mutex_unlock(&mutex);
 
 		unsigned short size = getSize();
 

@@ -36,7 +36,7 @@
 #include <PolySyncDataModel.hpp>
 #include <fstream>
 #include "Buffer.h"
-
+#include "Motion.h"
 #include "tensorflow/core/public/session.h"
 
 using namespace std;
@@ -58,7 +58,7 @@ private:
     ps_msg_type _messageType;
     ps_msg_type _imageType;
     ofstream file = ofstream("../output.txt", std::ios_base::app | std::ofstream::out);
-    Buffer<polysync::datamodel::PlatformMotionMessage> motionBuffer = Buffer<polysync::datamodel::PlatformMotionMessage>(1);
+    Buffer<polysync::datamodel::Motion> motionBuffer = Buffer<polysync::datamodel::Motion>(1);
     Buffer<polysync::datamodel::ImageDataMessage> imageBuffer = Buffer<polysync::datamodel::ImageDataMessage>(1);
 
 public:
@@ -95,7 +95,7 @@ public:
         if( std::shared_ptr <PlatformMotionMessage> incomingMessage = getSubclass< PlatformMotionMessage >( message ) )
         {
 			std::cout << "Motion message" << std::endl;
-	    	motionBuffer.push(*incomingMessage.get());
+	    	motionBuffer.push(Motion::fromMotionMessage(incomingMessage));
 			std::cout << "Motion written to buffer" << std::endl;
             incomingMessage->print(file);
 
