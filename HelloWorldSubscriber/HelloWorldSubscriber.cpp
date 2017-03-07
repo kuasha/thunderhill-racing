@@ -58,8 +58,8 @@ private:
     ps_msg_type _messageType;
     ps_msg_type _imageType;
     ofstream file = ofstream("../output.txt", std::ios_base::app | std::ofstream::out);
-    Buffer<polysync::datamodel::Motion> motionBuffer = Buffer<polysync::datamodel::Motion>(1);
-    Buffer<polysync::datamodel::ImageDataMessage> imageBuffer = Buffer<polysync::datamodel::ImageDataMessage>(1);
+    Buffer<polysync::datamodel::Motion> *motionBuffer = new Buffer<polysync::datamodel::Motion>(1);
+    Buffer<polysync::datamodel::ImageDataMessage> *imageBuffer = new Buffer<polysync::datamodel::ImageDataMessage>(1);
 
 public:
     /**
@@ -94,22 +94,22 @@ public:
         using namespace polysync::datamodel;
         if( std::shared_ptr <PlatformMotionMessage> incomingMessage = getSubclass< PlatformMotionMessage >( message ) )
         {
-			std::cout << "Motion message" << std::endl;
-	    	motionBuffer.push(Motion::fromMotionMessage(incomingMessage));
-			std::cout << "Motion written to buffer" << std::endl;
+	    	motionBuffer->push(Motion::fromMotionMessage(incomingMessage));
             incomingMessage->print(file);
 
 	    //incomingMessage->getMessageTimestamp();
         }
         if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
         {
-			std::cout << "Image Message" << std::endl;
-	    	imageBuffer.push(*incomingMessage.get());
-			std::cout << "Image written to buffer" << std::endl;
+	    	imageBuffer->push(*incomingMessage.get());
         	incomingMessage->print(file);
-			motionBuffer.pull().print(file);
-			std::cout << "Motion read from buffer" << std::endl;
+			motionBuffer->pull().print(file);
         }
+    }
+
+    ~HelloWorldSubscriberNode() {
+    	delete imageBuffer;
+    	delete motionBuffer;
     }
 
 };
