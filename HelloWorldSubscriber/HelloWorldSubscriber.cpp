@@ -157,7 +157,7 @@ public:
 			for (int d : imageData) {
 				printf("%c", d);
 			}
-			file << imageName.c_str() +","
+			file << imageName+","
 							+motionBuffer->pull().getCsvValues() + ","
 							+ std::to_string(steerBuffer->pull()) + ","
 							+ std::to_string(throttleBuffer->pull()) + ","
