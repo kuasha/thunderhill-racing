@@ -37,6 +37,7 @@ public:
 	static Motion fromMotionMessage(std::shared_ptr<PlatformMotionMessage> message);
 
 	int print(std::ofstream & file);
+	std::string getCsvValues();
 	double getHeading() const {
 		return heading;
 	}

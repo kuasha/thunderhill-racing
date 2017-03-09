@@ -56,9 +56,15 @@ class HelloWorldSubscriberNode : public polysync::Node
 {
 private:
     ps_msg_type _messageType;
+    ps_msg_type _brakeType;
+    ps_msg_type _throttleType;
+    ps_msg_type _steerType;
     ps_msg_type _imageType;
-    ofstream file = ofstream("../output.txt", std::ios_base::app | std::ofstream::out);
+    ofstream file = ofstream("output.txt", std::ios_base::app | std::ofstream::out);
     Buffer<polysync::datamodel::Motion> *motionBuffer = new Buffer<polysync::datamodel::Motion>(1);
+    Buffer<DDS_float> *steerBuffer = new Buffer<DDS_float>(1);
+    Buffer<DDS_float> *brakeBuffer = new Buffer<DDS_float>(1);
+    Buffer<DDS_float> *throttleBuffer = new Buffer<DDS_float>(1);
     Buffer<polysync::datamodel::ImageDataMessage> *imageBuffer = new Buffer<polysync::datamodel::ImageDataMessage>(1);
 
 public:
@@ -73,11 +79,17 @@ public:
     void initStateEvent() override
     {
         _messageType = getMessageTypeByName( "ps_platform_motion_msg" );
+        _brakeType = getMessageTypeByName( "ps_platform_brake_command_msg" );
+        _throttleType = getMessageTypeByName( "ps_platform_throttle_command_msg" );
+        _steerType = getMessageTypeByName( "ps_platform_steering_command_msg" );
         _imageType = getMessageTypeByName("ps_image_data_msg");
 
         // Register as a listener for the message type that the publisher
         // is going to send.  Message types are defined in later tutorials.
         registerListener( _messageType );
+        registerListener(_brakeType);
+        registerListener(_throttleType);
+        registerListener(_steerType);
         registerListener(_imageType);
     }
 
@@ -91,26 +103,67 @@ public:
      */
     virtual void messageEvent( std::shared_ptr< polysync::Message > message )
     {
-        using namespace polysync::datamodel;
-        if( std::shared_ptr <PlatformMotionMessage> incomingMessage = getSubclass< PlatformMotionMessage >( message ) )
-        {
-	    	motionBuffer->push(Motion::fromMotionMessage(incomingMessage));
-            incomingMessage->print(file);
+		using namespace polysync::datamodel;
+		if (std::shared_ptr<PlatformMotionMessage> incomingMessage =
+				getSubclass<PlatformMotionMessage>(message)) {
+			fprintf(stdout, "Motion Message");
+			Motion mot = Motion::fromMotionMessage(incomingMessage);
+			motionBuffer->push(mot);
+			fprintf(stdout, mot.getCsvValues().c_str());
+			fprintf(stdout, motionBuffer->pull().getCsvValues().c_str());
+			fflush(stdout);
 
-	    //incomingMessage->getMessageTimestamp();
-        }
-        if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
-        {
-	    	imageBuffer->push(*incomingMessage.get());
-        	incomingMessage->print(file);
-			motionBuffer->pull().print(file);
-        }
-    }
 
-    ~HelloWorldSubscriberNode() {
-    	delete imageBuffer;
-    	delete motionBuffer;
-    }
+			//incomingMessage->getMessageTimestamp();
+		}
+		if (std::shared_ptr<PlatformBrakeCommandMessage> incomingMessage =
+				getSubclass<PlatformBrakeCommandMessage>(message)) {
+			std::cout << "Brake Message" <<std::endl;
+			brakeBuffer->push(incomingMessage->getBrakeCommand());
+
+			//incomingMessage->getMessageTimestamp();
+		}
+		if (std::shared_ptr<PlatformThrottleCommandMessage> incomingMessage =
+				getSubclass<PlatformThrottleCommandMessage>(message)) {
+			std::cout << "Throttle Message" <<std::endl;
+			throttleBuffer->push(incomingMessage->getThrottleCommand());
+
+			//incomingMessage->getMessageTimestamp();
+		}
+		if (std::shared_ptr<PlatformSteeringCommandMessage> incomingMessage =
+				getSubclass<PlatformSteeringCommandMessage>(message)) {
+			std::cout << "Steering Message" <<std::endl;
+			steerBuffer->push(incomingMessage->getSteeringWheelAngle());
+
+			//incomingMessage->getMessageTimestamp();
+		}
+		if (std::shared_ptr<ImageDataMessage> incomingMessage =
+				getSubclass<ImageDataMessage>(message)) {
+			FILE *stream;
+			DDS_unsigned_long_long ts = incomingMessage->getHeaderTimestamp();
+			std::string imageName = "IMG/"
+					+ std::to_string(
+							incomingMessage->getSensorDescriptor().getId())
+					+ '-' + std::to_string(ts) + ".jpeg";
+			const char * c = imageName.c_str();
+			if ((stream = freopen(c, "w", stdout)) == NULL) {
+				fprintf(stderr, "Can't create file: %s\nTry:\n\tmkdir IMG\n\n",
+						imageName.c_str());
+				fflush(stderr);
+				exit(-1);
+			}
+
+			std::vector<DDS_octet> imageData = incomingMessage->getDataBuffer();
+			for (int d : imageData) {
+				printf("%c", d);
+			}
+			file << imageName.c_str() +","
+							+motionBuffer->pull().getCsvValues() + ","
+							+ std::to_string(steerBuffer->pull()) + ","
+							+ std::to_string(throttleBuffer->pull()) + ","
+							+ std::to_string(brakeBuffer->pull()) + "\n";
+		}
+	}
 
 };
 

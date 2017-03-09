@@ -35,6 +35,15 @@ int Motion::print(std::ofstream & file) {
 	return 1;
 
 }
+
+std::string Motion::getCsvValues() {
+	std::string dataString = std::to_string(this->yaw) +","+
+			std::to_string(this->heading)+","+std::to_string(this->vel[0])+","+std::to_string(this->vel[1])+","+
+			std::to_string(this->vel[2]);
+	return dataString;
+
+}
+
 Motion Motion::fromMotionMessage(std::shared_ptr<PlatformMotionMessage> message) {
 
     std::array< DDS_double, 4 > orient = message->getOrientation();

@@ -72,14 +72,24 @@ public:
 
 	}
 
+	Buffer(Buffer & other){
+
+			this->maxSize=other.maxSize;
+
+			this->buffer = new T[maxSize];
+
+			this->writePosition = 0;
+			this->readPosition = 0;
+
+		}
+
 	~Buffer(){
 		delete this->buffer;
 	}
 
 	void push(const T & t){
-		T newT = T(t);
 		mtx.lock();
-		buffer[writePosition] = newT;
+		buffer[writePosition] = t;
 		increaseWritePosition();
 		mtx.unlock();
 
@@ -88,11 +98,13 @@ public:
 	T pull(){
 		T output;
 		if(hasData()){
+			cout << "Has Data" << endl;
 			mtx.lock();
 			output = buffer[readPosition];
 			increaseReadPosition();
 			mtx.unlock();
 		} else {
+			cout << "Has No Data" << endl;
 			output = T();
 		}
 
@@ -152,7 +164,7 @@ public:
 		mtx.lock();
 
 
-		if(readPosition == writePosition) output = false;
+		if(readPosition == writePosition && maxSize != 1) output = false;
 		mtx.unlock();
 
 
