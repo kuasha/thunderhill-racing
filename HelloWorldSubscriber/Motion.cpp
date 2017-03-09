@@ -57,8 +57,6 @@ std::string Motion::getCsvValues() {
 
 Motion Motion::fromMotionMessage(std::shared_ptr<PlatformMotionMessage> message) {
 
-    std::array< DDS_double, 4 > orient = message->getOrientation();
-
 	Motion mot = Motion(message->getHeaderTimestamp(), message->getHeading(),
 			message->getLongitude(), message->getLatitude(),
 			message->getVelocity(), message->getOrientation());
