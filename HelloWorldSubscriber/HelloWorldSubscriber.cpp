@@ -91,7 +91,8 @@ public:
         registerListener(_throttleType);
         registerListener(_steerType);
         registerListener(_imageType);
-        file << "path,yaw,heading,vel0,vel1,vel2,steering,throttle,brake\n";
+        file << "path,heading,longitude,latitude,quarternion0,quarternion1,quarternion2"
+        	 <<",quarternion3,vel0,vel1,vel2,steering,throttle,brake\n";
     }
 
     /**

@@ -25,13 +25,16 @@ namespace datamodel{
 class Motion{
 private:
 	DDS_unsigned_long_long timestamp;
-	double yaw;
 	double heading;
+	double longitude;
+	double latitude;
 	std::array< DDS_double, 3 > vel;
+	std::array< DDS_double, 4 > orientation;
 
 public:
-	Motion(DDS_unsigned_long_long timestamp, double yaw,
-			double heading, std::array< DDS_double, 3 > vel);
+	Motion(DDS_unsigned_long_long timestamp,
+			double heading, double longitude, double latitude,
+			std::array< DDS_double, 3 > vel, std::array< DDS_double, 4 > orientation);
 	Motion(const Motion & other);
 	Motion();
 	static Motion fromMotionMessage(std::shared_ptr<PlatformMotionMessage> message);
@@ -50,8 +53,22 @@ public:
 		return vel;
 	}
 
+
 	double getYaw() const {
-		return yaw;
+		return asin((2 * this->orientation[0] * this->orientation[1])
+				+ (2 * this->orientation[2] * this->orientation[3]))  * 180.0 / PI;
+	}
+
+	double getLatitude() const {
+		return latitude;
+	}
+
+	double getLongitude() const {
+		return longitude;
+	}
+
+	std::array<DDS_double, 4> getOrientation() const {
+		return orientation;
 	}
 };
 
