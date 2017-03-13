@@ -48,7 +48,7 @@ std::string Motion::getCsvValues() {
 	std::string dataString = std::to_string(this->heading)+","+std::to_string(this->longitude)+","
 			+std::to_string(this->latitude)+","
 			+std::to_string(this->orientation[0])+","+std::to_string(this->orientation[1])
-			+","+std::to_string(this->orientation[2])+","+std::to_string(this->orientation[3])
+			+","+std::to_string(this->orientation[2])+","+std::to_string(this->orientation[3])+","
 			+std::to_string(this->vel[0])+","+std::to_string(this->vel[1])+","+
 			std::to_string(this->vel[2]);
 	return dataString;
