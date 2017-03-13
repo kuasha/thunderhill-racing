@@ -257,7 +257,45 @@ If everything goes well, your simulated car will start to go in a circle.
 ![SimScreen3](./images/SimScreen3.png)
 
 ### TODOs
-1. Add your own model.  Update the `testclient.py` and replace the circular motion with your model:
+1. Add your own model.  Update the `testclient.py` and replace the circular motion with your model.  Look for the following sections to update:
+```
+        #################################################################################
+        # TODO: 1. This should be replaced by the model prediction
+        #       2. May need to expose message timestamps to discard old sensor readings.
+        #################################################################################
+        # delay a bit (50 milliseconds)
+        #################################################################################
+        time.sleep(0.05)
+        steering_angle = -0.2
+        throttle = 0.5
+        braking = 0.0
+        #################################################################################
+        # This model currently assumes that the features of the model are just the images.
+        # Feel free to change this.
+        # TODO: Uncomment below to predict using your model...
+        #################################################################################
+        #
+        # steering_angle = float(model.predict(transformed_image_array, batch_size=1))
+        #
+        #################################################################################
+        # send steering and throttle commands back through polysync
+        self.client.sendCommand( steering_angle, throttle, braking)
+```
+```
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Polysync Remote Driving')
+    #
+    # TODO: uncomment below to load model
+    #
+    # parser.add_argument('model', type=str,
+    # help='Path to model definition json. Model weights should be on the same path.')
+    # args = parser.parse_args()
+    # with open(args.model, 'r') as jfile:
+    #     model = model_from_json(json.load(jfile))
+    # model.compile("adam", "mse")
+    # weights_file = args.model.replace('json', 'h5')
+    # model.load_weights(weights_file)
+```
 2. Update Simulator to add additional features that is available from PolySync:
    a. Orientation (vector 4)
    b. Velocity (vector 3)
