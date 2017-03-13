@@ -297,10 +297,12 @@ if __name__ == '__main__':
     # model.load_weights(weights_file)
 ```
 2. Update Simulator to add additional features that is available from PolySync:
-   a. Orientation (vector 4)
-   b. Velocity (vector 3)
-   c. Heading (double)
+
+    a. Orientation (vector 4)
+    b. Velocity (vector 3)
+    c. Heading (double)
+
 3. Check the GPS calculations (lat/lon) in `SimNode.py` to make sure we are doing this correctly.
-4. Investigate buffering and queuing effect to figure out if it is because we need to discard old events in the Polysync event queeue or something else.  If we need to discard events, so we expose the timestamps to the python layer or do it at the C++ layer?
+4. Investigate buffering and queuing effect to figure out if it is because we need to discard old events in the Polysync event queeue or something else.  If we need to discard events, should we expose the timestamps to the python layer or do it at the C++ layer?
 
 
