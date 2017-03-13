@@ -2,6 +2,10 @@
 
 An Initial Python wrapper for Polysync Core and Connector for Udacity Simulator.  This is work in progress.  The simulator images are being forwarded as MJPEG in Polysync.
 
+## Initial Architecture
+
+![Initial Architecture](./images/architecture.jpg)
+
 ## Installation (Debug Version)
 
 ```
@@ -90,8 +94,8 @@ Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 ...
 ```
 2. Start Udacity Simulator and enter into Autonomous Mode
-** RECOMMEND 320x160 Resolution setting.  1920x600 will work but is SLOW**
 ![SimScreen1](./images/SimScreen1.png) ![SimScreen2](./images/SimScreen2.png)
+**RECOMMEND 320x160 Resolution setting.  1920x600 will work but is SLOW**
 The SimNode should display the following additional output:
 ```
 (25129) accepted ('127.0.0.1', 42881)
