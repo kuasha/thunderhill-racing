@@ -299,7 +299,9 @@ if __name__ == '__main__':
 2. Update Simulator to add additional features that is available from PolySync:
 
     a. Orientation (vector 4)
+
     b. Velocity (vector 3)
+
     c. Heading (double)
 
 3. Check the GPS calculations (lat/lon) in `SimNode.py` to make sure we are doing this correctly.
