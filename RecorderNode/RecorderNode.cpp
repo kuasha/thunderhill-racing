@@ -52,7 +52,7 @@ using namespace tensorflow;
  * this instance the initStateEvent and the messageHandlerEvent are overloaded
  * to register for the messages and receive them, respectively.
  */
-class HelloWorldSubscriberNode : public polysync::Node
+class RecorderNode : public polysync::Node
 {
 private:
     ps_msg_type _messageType;
@@ -182,7 +182,7 @@ int main()
     a.scalar<float>()() = 3.0;
 
     // Create an instance of the HelloWorldNode and connect it to PolySync
-    HelloWorldSubscriberNode subscriberNode;
+    RecorderNode subscriberNode;
 
     // When the node has been created, it will cause an initStateEvent to
     // to be sent.

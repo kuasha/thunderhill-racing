@@ -1,6 +1,6 @@
 cc_binary(
-  name='HelloWorldSubscriber',
-  srcs=['HelloWorldSubscriber.cpp',
+  name='RecorderNode',
+  srcs=['RecorderNode.cpp',
 	'Buffer.h', 
 	'Motion.h',
 	'Motion.cpp',

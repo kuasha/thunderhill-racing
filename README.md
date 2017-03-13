@@ -26,7 +26,7 @@ See [full instructions here](https://bazel.build/versions/master/docs/install.ht
 
 This will take a long time the first time you build the TensorFlow libraries. Subsequent builds are much faster.
 
-    $ bazel run //HelloWorldSubscriber:HelloWorldSubscriber
+    $ bazel run //RecorderNode:RecorderNode
 
 ## Optional: Building TensorFlow with GPU / CUDA
 
