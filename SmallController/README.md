@@ -6,11 +6,11 @@ TODO:
 2. issue steering, break and throttle commands from the MainNode.cpp (or can only be steering command, most important is to issue any command)
 
 To run:
-1. in MainNode folder:
-cmake .
+1. in MainNode folder:<br/>
+cmake .<br/>
 make
 
-2. in SmallController folder:
+2. in SmallController folder:<br/>
 python clientnode.py
 
 3. start session in PS studio
