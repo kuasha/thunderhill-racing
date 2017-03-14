@@ -306,5 +306,5 @@ if __name__ == '__main__':
 
 3. Check the GPS calculations (lat/lon) in `SimNode.py` to make sure we are doing this correctly.
 4. Investigate buffering and queuing effect to figure out if it is because we need to discard old events in the Polysync event queeue or something else.  If we need to discard events, should we expose the timestamps to the python layer or do it at the C++ layer?
-
+5. Investigate `joystick_commander` in `~/polysync/PolySync-Core-C-Examples` to see what addition fuctions we need to invoke to drive the Kia Soul.
 
