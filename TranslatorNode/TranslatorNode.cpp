@@ -40,6 +40,7 @@
 #include "tensorflow/core/public/session.h"
 #include "tensorflow/core/platform/env.h"
 #include "tensorflow/core/lib/io/path.h"
+#include "tensorflow/core/graph/default_device.h"
 
 using namespace std;
 using namespace tensorflow;
@@ -70,6 +71,10 @@ private:
 
     const static DDS_unsigned_long fwdFacingCameraSensorId = 15395510;
 
+    tensorflow::GraphDef _graphDef;
+    tensorflow::SessionOptions _sessionOptions;
+    const string _graphPath = "/home/vlad/projects/thunderhill-racing/TranslatorNode/tensorflow_inception_graph.pb";
+
 public:
     /**
      * @brief initStateEvent
@@ -94,6 +99,8 @@ public:
         registerListener(_throttleType);
         registerListener(_steerType);
         registerListener(_imageType);
+
+        loadTfModel();
     }
 
     /**
@@ -144,31 +151,43 @@ public:
     void setConfigurationEvent( const GetOpt & commandLineOptions ) override {
     }
 
-    void runTfModel(DDS_float steerData, DDS_float breakData, DDS_float throttleData, std::vector<DDS_octet> imageData) {
+    void loadTfModel() {
+        TF_CHECK_OK(ReadBinaryProto(tensorflow::Env::Default(), _graphPath, &_graphDef));
 
+        // Configure GPU
+        // graph::SetDefaultDevice("/gpu:0", &_graphDef);
+        // _sessionOptions.config.mutable_gpu_options()->set_per_process_gpu_memory_fraction(0.5);
+        // _sessionOptions.config.mutable_gpu_options()->set_allow_growth(true);
+
+        fprintf(stderr, "Tensorflow model was successfully loaded from file!\n");
+    }
+
+    void runTfModel(DDS_float steerData, DDS_float brakeData, DDS_float throttleData, std::vector<DDS_octet> imageData) {
+        Session* session;
+        TF_CHECK_OK(NewSession(_sessionOptions, &session));
+
+        TF_CHECK_OK(session->Create(_graphDef));
+
+        Tensor steer(DT_FLOAT, TensorShape());
+        steer.scalar<float>()() = steerData;
+
+        Tensor brake(DT_FLOAT, TensorShape());
+        brake.scalar<float>()() = brakeData;
+
+        Tensor throttle(DT_FLOAT, TensorShape());
+        throttle.scalar<float>()() = throttleData;
+
+        std::vector<Tensor> outputs;
+        TF_CHECK_OK(session->Run({{"steer", steer}, {"brake", brake}, {"throttle", throttle}}, {}, {}, &outputs));
+
+        outputs.clear();
+        session->Close();
+        delete session;
+
+        fprintf(stderr, "Tensorflow model was successfully ran!\n");
     }
 
 };
-
-
-void loadTfModel(string graphFileName, std::unique_ptr<tensorflow::Session>* session) {
-    tensorflow::GraphDef graphDef;
-    Status loadGraphStatus = ReadBinaryProto(tensorflow::Env::Default(), graphFileName, &graphDef);
-
-    if (!loadGraphStatus.ok()) {
-        fprintf(stderr, "Graph not loaded from protobuf file!\n");
-        exit(1);
-    }
-
-    session->reset(tensorflow::NewSession(tensorflow::SessionOptions()));
-    Status sessionCreateStatus = (*session)->Create(graphDef);
-    if (!sessionCreateStatus.ok()) {
-        fprintf(stderr, "Session was not created!\n");
-        exit(1);
-    }
-
-    fprintf(stderr, "Tensorflow model was successfully loaded!\n");
-}
 
 /**
  * @brief main
@@ -183,13 +202,6 @@ int main()
     // Just testing
     Tensor a(DT_FLOAT, TensorShape());
     a.scalar<float>()() = 3.0;
-
-    fprintf(stderr, "!!! Testing the model loading !!!\n");
-    std::unique_ptr<tensorflow::Session> session;
-    string graphPath = "/home/vlad/projects/thunderhill-racing/TranslatorNode/tensorflow_inception_graph.pb";
-    //tensorflow::io::JoinPath();
-
-    loadTfModel(graphPath, &session);
 
     // Create an instance of the HelloWorldNode and connect it to PolySync
     TranslatorNode subscriberNode;
