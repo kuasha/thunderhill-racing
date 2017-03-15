@@ -12,7 +12,7 @@ class MainNode(object):
         lib.MainNode_setImageCallback(self.obj, self.func1)
 
     def steer(self, angle):
-    	lib.steer(angle)
+    	lib.MainNode_steer(self.obj, angle)
 
     def connectPolySync(self):
         lib.MainNode_connectPolySync(self.obj)

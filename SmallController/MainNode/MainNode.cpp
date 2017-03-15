@@ -25,7 +25,7 @@
 
 /**
  * \example HelloWorldSubscriber.cpp
- * 
+ *
  * PolySync Hello World Subscriber C++ API example application
  *      Demonstrate how to subscribe a node to a message
  *
@@ -50,7 +50,7 @@ private:
     ps_msg_type _messageType;
     std::vector <unsigned char> imageData;
     unsigned int imageSize;
-    
+
 public:
     imageCallback imageRecieved = NULL;
 
@@ -79,7 +79,7 @@ public:
         using namespace polysync::datamodel;
 
         if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
-        {  
+        {
             if (incomingMessage->getPixelFormat() == PIXEL_FORMAT_MJPEG) {
                 std::vector <unsigned char> image = incomingMessage->getDataBuffer();
                 imageSize = image.size();
@@ -99,11 +99,11 @@ public:
                     imageRecieved(imageData.size(), imageData.data());
                 }
             }
-            
+
         }
     }
 
-    void steer(float angle) 
+    void steer(float angle)
     {
         std::cout << "sending steering command" << std::endl;
         polysync::datamodel::PlatformSteeringCommandMessage message( *this);
@@ -111,9 +111,9 @@ public:
         message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
         message.setSteeringWheelAngle(angle);
         message.setHeaderTimestamp( polysync::getTimestamp() );
+        polysync::sleepMicro( 1000000 );
+        message.print();
     }
-
-    
 
 };
 
@@ -121,15 +121,7 @@ extern "C" {
     MainNode* MainNode_new(){ return new MainNode(); }
     void MainNode_connectPolySync(MainNode* node){ node->connectPolySync(); }
     void MainNode_setImageCallback(MainNode* node, imageCallback imageRecieved){ node->imageRecieved = imageRecieved; }
-    void steer(float angle) {
-        std::cout << "sending steering command" << std::endl;
-        std::cout << angle << std::endl;
-        // polysync::datamodel::PlatformSteeringCommandMessage message(*this);
-        // message.setTimestamp( polysync::getTimestamp() );
-        // message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
-        // message.setSteeringWheelAngle(angle);
-        // message.setHeaderTimestamp( polysync::getTimestamp() );
-    }
+    void MainNode_steer(MainNode* node, float angle){ node->steer(angle); }
 }
 
 // int main()
