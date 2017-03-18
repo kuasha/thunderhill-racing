@@ -1,6 +1,6 @@
 # Clone repository
 
-    $ git clone --recursive https://github.com/h/thunderhill-racing
+    $ git clone --recursive https://github.com/kuasha/thunderhill-racing
 
 # Setup Instructions
 
