@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 2.8 )
 
-project( polysync-helloworld-publisher-cpp )
+project( polysync-publisher-subscriber-cpp )
 
 if( NOT PSYNC_HOME )
     if( $ENV{PSYNC_HOME} )
@@ -17,7 +17,7 @@ include_directories(
 )
 
 add_executable( ${PROJECT_NAME}
-    HelloWorldPublisher.cpp
+    PublisherSubscriberNode.cpp
 )
 
 target_link_libraries( ${PROJECT_NAME}
