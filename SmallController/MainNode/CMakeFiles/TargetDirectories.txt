@@ -1,3 +1,0 @@
-/home/jjordening/git/thunderhill-racing/SmallController/MainNode/CMakeFiles/rebuild_cache.dir
-/home/jjordening/git/thunderhill-racing/SmallController/MainNode/CMakeFiles/edit_cache.dir
-/home/jjordening/git/thunderhill-racing/SmallController/MainNode/CMakeFiles/MainNode.dir
