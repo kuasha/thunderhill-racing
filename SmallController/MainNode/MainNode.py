@@ -15,7 +15,7 @@ class MainNode(object):
     	lib.MainNode_steerCommand(self.obj, angle)
 
     def brakeCommand(self, value):
-        lib.MainNode_breakCommand(self.obj, value)
+        lib.MainNode_brakeCommand(self.obj, value)
 
     def connectPolySync(self):
         lib.MainNode_connectPolySync(self.obj)
