@@ -9,8 +9,12 @@ from keras.models import load_model
 import h5py
 from keras import __version__ as keras_version
 import tensorflow as tf
+from keras import backend as K
+from Preprocess import *
+import cv2
 
-f = h5py.File("ps_small_model.h5", mode='r')
+
+f = h5py.File("multiModel.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -18,7 +22,10 @@ if model_version != keras_version:
     print('You are using Keras version ', keras_version, ', but the model was built using ', model_version)
 
 
-model = load_model("ps_small_model.h5")
+def customLoss(y_true, y_pred):
+    return K.mean(K.square(y_pred - y_true), axis=-1)
+
+model = load_model("multiModel.h5", custom_objects={'customLoss':customLoss})
 graph = tf.get_default_graph()
 
 
@@ -37,10 +44,13 @@ def imageReceived(imageSize, rawImage):
 	with graph.as_default():
 		jpegImage = copyImage(rawImage, imageSize)
 		image = Image.open(BytesIO(jpegImage))
+		# image.save('test.jpg')
+		# image = cv2.imread('test.jpg', 1)
 		image_array = np.asarray(image)
-		steering_angle = float(model.predict(image_array[None, :, :, :], batch_size=1))
-		print(steering_angle)
-		Node.steer(c_float(steering_angle))
+		image_array = cv2.resize(image_array, (320, 160))
+		steering_angle, throttle, brake_value = model.predict([preprocessImage(image_array)[None,:,:,:]])
+		Node.steerCommand(c_float(steering_angle))
+		Node.brakeCommand(c_float(brake_value))
 
 
 Node = MainNode(imageReceived)
