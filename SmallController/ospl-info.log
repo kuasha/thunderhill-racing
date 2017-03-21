@@ -1,0 +1,1771 @@
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1865658183 from [1,2147483647]
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490130224.144442243
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : Service cmsoap disabled
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490130224.144734856
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : Durability Client for spliced started
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490130224.145724957
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490130224.145753197
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1490130224.145992727
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : Could not start service durability as thread
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1490130224.146113992
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : ddsi2 7fd51fc74700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490130224.151496363
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:03:45 CET 2017
+Description : writer 6f33af47:8e:1:2c2 considering reader 518d8cf:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : ddsi2 7fd51fc74700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130225.153509357
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:03:45 CET 2017
+Description : writer 6f33af47:8e:1:2c2 considering reader 518d8cf:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : recv 7fd541e19700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130225.154555695
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:05:18 CET 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : ddsi2 7fd51fc74700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490130318.491784036
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:05:28 CET 2017
+Description : Durability Client for spliced stopped
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490130328.475673287
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:05:28 CET 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490130328.475737998
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1923816133 from [1,2147483647]
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490130376.971421742
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : Service cmsoap disabled
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490130376.971742796
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : Durability Client for spliced started
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490130376.972687943
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490130376.972736111
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1490130376.972961911
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : Could not start service durability as thread
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1490130376.973038031
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490130376.981358672
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 435b7018:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992523187
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992580645
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992592393
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 3c55795e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992601652
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992610519
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 518efc77:b4:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992620545
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 18d91999:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992635740
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 7555f3be:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992644459
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992652263
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:17 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130377.992658129
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : thread main failed to make progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : lease 7fda1831d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130378.974734734
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : thread tev failed to make progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : lease 7fda1831d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130378.974771472
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130378.992862298
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 518d8cf:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130378.992895024
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 435b7018:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.994358124
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.994406287
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.994428739
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 518d8cf:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.994440737
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 3c55795e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.994452437
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 518efc77:b4:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.995083174
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.995838313
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 18d91999:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.996230147
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 7555f3be:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.997076981
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.997631442
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:18 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130378.998619995
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:19 CET 2017
+Description : writer 72ab1ac5:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : recv 7fd9c763e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130379.000996653
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:19 CET 2017
+Description : thread main once again made progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : lease 7fda1831d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130379.974850172
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:06:19 CET 2017
+Description : thread tev once again made progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : lease 7fda1831d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130379.974898731
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:07:13 CET 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : ddsi2 7fd9c5465700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490130433.178761278
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:07:23 CET 2017
+Description : Durability Client for spliced stopped
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490130443.161669029
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:07:23 CET 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490130443.161771618
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1877319226 from [1,2147483647]
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490130561.677858293
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : Service cmsoap disabled
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490130561.678359136
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : Durability Client for spliced started
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490130561.679561286
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490130561.679596978
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1490130561.679827017
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : Could not start service durability as thread
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1490130561.679913832
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490130561.693092780
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : thread main failed to make progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : lease 7f43f033f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130563.681718778
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : thread tev failed to make progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : lease 7f43f033f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130563.681763653
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 435b7018:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699125281
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699162791
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699176969
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 3c55795e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699183297
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 525ace6a:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699188459
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699193546
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 518efc77:b4:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699198604
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 23744d7d:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699204186
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699209140
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 18d91999:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699214042
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 5768489b:b0:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699224799
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 4eca3aa9:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699236678
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 213440ae:b4:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699241842
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 7555f3be:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699246666
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699251717
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699256552
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 518d8cf:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490130563.699261444
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701225515
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 5768489b:b0:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701275033
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 18d91999:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701300739
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701322346
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701354475
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701376376
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701398181
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701417695
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 518efc77:b4:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701435308
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 7555f3be:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701453896
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 213440ae:b4:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701923740
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 435b7018:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.701995378
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 518d8cf:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.702182921
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 23744d7d:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.702484570
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 3c55795e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.702664777
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 4eca3aa9:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.703078490
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:23 CET 2017
+Description : writer 6fe59e3a:8e:1:2c2 considering reader 525ace6a:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : recv 7f43e0016700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490130563.704213196
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:24 CET 2017
+Description : thread main once again made progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : lease 7f43f033f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130564.681836504
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:09:24 CET 2017
+Description : thread tev once again made progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : lease 7f43f033f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490130564.681875947
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:43 CET 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : ddsi2 7f438b2e2700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490130583.925992694
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:53 CET 2017
+Description : Durability Client for spliced stopped
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490130593.909614018
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:09:53 CET 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490130593.909684077
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 913286137 from [1,2147483647]
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490131069.552350485
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : Service cmsoap disabled
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490131069.552659778
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : Durability Client for spliced started
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490131069.553800715
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490131069.553873036
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1490131069.554107905
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : Could not start service durability as thread
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1490131069.554207684
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490131069.560959567
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 435b7018:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578352011
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578396984
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578405491
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 3c55795e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578411386
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 525ace6a:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578416447
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578422079
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 518efc77:b4:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578427150
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 23744d7d:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578432254
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578437224
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 18d91999:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578442144
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 5768489b:b0:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578449342
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 4eca3aa9:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578454843
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 213440ae:b4:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578459712
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 7555f3be:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578467110
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578473171
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578478237
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 518d8cf:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131070.578483316
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 518efc77:b4:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.579885128
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.579939267
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 3c55795e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.579998108
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 7555f3be:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.580027509
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 518d8cf:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.581112927
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 23744d7d:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.581212773
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 5768489b:b0:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.581320642
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 435b7018:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.581356518
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.581564514
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.581967412
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 213440ae:b4:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.582014258
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 4eca3aa9:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.582201518
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 525ace6a:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.582242921
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.583141906
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 18d91999:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.583187274
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.583737924
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:17:50 CET 2017
+Description : writer 366fa3f9:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : recv 7f5e78616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131070.583774984
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:18:44 CET 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : ddsi2 7f5e26f63700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490131124.737528540
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:18:54 CET 2017
+Description : Durability Client for spliced stopped
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490131134.722207482
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:18:54 CET 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490131134.722285551
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1782117390 from [1,2147483647]
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490131590.052966588
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : Service cmsoap disabled
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490131590.053298084
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : Durability Client for spliced started
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490131590.054356069
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490131590.054400703
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1490131590.054588936
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : Could not start service durability as thread
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1490131590.054685225
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490131590.060891165
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 435b7018:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074305363
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074340833
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074357948
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 525ace6a:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074367378
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074379615
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 518efc77:b4:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074386727
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 23744d7d:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074391703
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074396521
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 18d91999:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074401268
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 5768489b:b0:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074406029
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 4eca3aa9:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074411082
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 213440ae:b4:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074435347
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 7555f3be:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074441846
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074450282
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074456382
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:31 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 518d8cf:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131591.074461318
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : thread main failed to make progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : lease 7ff48c616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490131592.056487094
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : thread tev failed to make progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : lease 7ff48c616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490131592.056521725
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 3c55795e:92:1:2c7 non-responsive
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490131592.074738409
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 518efc77:b4:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.075265684
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 213440ae:b4:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.075300631
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 5768489b:b0:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.075322911
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 6082b1c:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.075331847
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 4eca3aa9:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.075339812
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 18d91999:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.075550867
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 3c55795e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.076008165
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 3b83f5ca:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.076300654
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 518d8cf:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.076541483
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 23744d7d:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.077357868
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 7fe3fe8d:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.077523705
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 7555f3be:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.078885771
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 525ace6a:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.079871474
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 435b7018:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.079910129
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 5a8cd375:8e:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.079938533
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 3ee929ce:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.080080063
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:32 CET 2017
+Description : writer 6a38f40e:8e:1:2c2 considering reader 8aa2c2e:92:1:2c7 responsive again
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : recv 7ff44c63f700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490131592.080231813
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:33 CET 2017
+Description : thread main once again made progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : lease 7ff48c616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490131593.056593364
+========================================================================================
+Report      : WARNING
+Date        : Tue Mar 21 22:26:33 CET 2017
+Description : thread tev once again made progress
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : lease 7ff48c616700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1490131593.056642248
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:28:05 CET 2017
+Description : Missed heartbeat for node 998503882. (DCPSPublication is complete)
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : OSPL Garbage Collector 7ff44386d700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490131685.744995026
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:28:06 CET 2017
+Description : Missed heartbeat for node 1381682794. (DCPSPublication is complete)
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : OSPL Garbage Collector 7ff44386d700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490131686.347124465
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:28:07 CET 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : ddsi2 7ff4434e2700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490131687.125151270
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:28:17 CET 2017
+Description : Durability Client for spliced stopped
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490131697.110714339
+========================================================================================
+Report      : INFO
+Date        : Tue Mar 21 22:28:17 CET 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490131697.110781343

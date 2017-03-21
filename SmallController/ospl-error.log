@@ -1,0 +1,85 @@
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1490130224.146093290
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:03:44 CET 2017
+Description : Problem opening 'durability'
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <30779>
+Thread      : spliced 7fd5c3060700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490130224.146108034
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1490130376.973019107
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:06:16 CET 2017
+Description : Problem opening 'durability'
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31838>
+Thread      : spliced 7fda5bfbb700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490130376.973031423
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1490130561.679892221
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:09:21 CET 2017
+Description : Problem opening 'durability'
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <31983>
+Thread      : spliced 7f4432825700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490130561.679905773
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1490131069.554180781
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:17:49 CET 2017
+Description : Problem opening 'durability'
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <32359>
+Thread      : spliced 7f5eca480700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490131069.554198038
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1490131590.054659829
+========================================================================================
+Report      : ERROR
+Date        : Tue Mar 21 22:26:30 CET 2017
+Description : Problem opening 'durability'
+
+Node        : AKKA-DataScience-P50-01
+Process     : python3.5 <314>
+Thread      : spliced 7ff4d6a00700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490131590.054673067

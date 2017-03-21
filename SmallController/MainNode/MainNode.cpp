@@ -109,7 +109,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setSteeringWheelAngle(angle);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        polysync::sleepMicro( 1000000 );
+        polysync::sleepMicro( 1000 );
         message.print();
     }
 
@@ -119,7 +119,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setBrakeCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        polysync::sleepMicro( 1000000 );
+        polysync::sleepMicro( 1000 );
         message.print();
     }
 
