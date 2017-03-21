@@ -123,6 +123,16 @@ public:
         message.print();
     }
 
+    void throttleCommand(float value)
+    {
+        polysync::datamodel::PlatformThrottleCommandMessage message( *this);
+        message.setTimestamp( polysync::getTimestamp() );
+        message.setThrottleCommand(value);
+        message.setHeaderTimestamp( polysync::getTimestamp() );
+        polysync::sleepMicro( 1000000 );
+        message.print();
+    }
+
 };
 
 extern "C" {
@@ -131,6 +141,7 @@ extern "C" {
     void MainNode_setImageCallback(MainNode* node, imageCallback imageRecieved){ node->imageRecieved = imageRecieved; }
     void MainNode_steerCommand(MainNode* node, float angle){ node->steerCommand(angle); }
     void MainNode_brakeCommand(MainNode* node, float value){ node->brakeCommand(value); }
+    void MainNode_throttleCommand(MainNode* node, float value){ node->throttleCommand(value); }
 }
 
 // int main()

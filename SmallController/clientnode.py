@@ -61,6 +61,7 @@ def imageReceived(imageSize, rawImage):
 		Node.steerCommand(c_float(steering_angle))
 		Node.brakeCommand(c_float(brake_value))
 		print("Commands sent", time.time() - t)
+		Node.throttleCommand(c_float(throttle))
 
 
 Node = MainNode(imageReceived)
