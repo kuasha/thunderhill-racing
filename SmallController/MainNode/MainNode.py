@@ -17,5 +17,8 @@ class MainNode(object):
     def brakeCommand(self, value):
         lib.MainNode_brakeCommand(self.obj, value)
 
+    def throttleCommand(self, value):
+        lib.MainNode_throttleCommand(self.obj, value)
+
     def connectPolySync(self):
         lib.MainNode_connectPolySync(self.obj)

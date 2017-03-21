@@ -44,13 +44,13 @@ def imageReceived(imageSize, rawImage):
 	with graph.as_default():
 		jpegImage = copyImage(rawImage, imageSize)
 		image = Image.open(BytesIO(jpegImage))
-		# image.save('test.jpg')
-		# image = cv2.imread('test.jpg', 1)
 		image_array = np.asarray(image)
 		image_array = cv2.resize(image_array, (320, 160))
 		steering_angle, throttle, brake_value = model.predict([preprocessImage(image_array)[None,:,:,:]])
 		Node.steerCommand(c_float(steering_angle))
 		Node.brakeCommand(c_float(brake_value))
+		# TODO: - fix throttle value
+		Node.throttleCommand(c_float(throttle))
 
 
 Node = MainNode(imageReceived)
