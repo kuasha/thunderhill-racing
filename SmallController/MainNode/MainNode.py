@@ -11,8 +11,11 @@ class MainNode(object):
         self.func1 = self.FUNC1(self.imagefunc)
         lib.MainNode_setImageCallback(self.obj, self.func1)
 
-    def steer(self, angle):
-    	lib.MainNode_steer(self.obj, angle)
+    def steerCommand(self, angle):
+    	lib.MainNode_steerCommand(self.obj, angle)
+
+    def brakeCommand(self, value):
+        lib.MainNode_breakCommand(self.obj, value)
 
     def connectPolySync(self):
         lib.MainNode_connectPolySync(self.obj)

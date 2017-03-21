@@ -103,13 +103,21 @@ public:
         }
     }
 
-    void steer(float angle)
+    void steerCommand(float angle)
     {
-        std::cout << "sending steering command" << std::endl;
         polysync::datamodel::PlatformSteeringCommandMessage message( *this);
         message.setTimestamp( polysync::getTimestamp() );
-        message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
         message.setSteeringWheelAngle(angle);
+        message.setHeaderTimestamp( polysync::getTimestamp() );
+        polysync::sleepMicro( 1000000 );
+        message.print();
+    }
+
+    void brakeCommand(float value)
+    {
+        polysync::datamodel::PlatformBrakeCommandMessage message( *this);
+        message.setTimestamp( polysync::getTimestamp() );
+        message.setBrakeCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
         polysync::sleepMicro( 1000000 );
         message.print();
@@ -121,7 +129,8 @@ extern "C" {
     MainNode* MainNode_new(){ return new MainNode(); }
     void MainNode_connectPolySync(MainNode* node){ node->connectPolySync(); }
     void MainNode_setImageCallback(MainNode* node, imageCallback imageRecieved){ node->imageRecieved = imageRecieved; }
-    void MainNode_steer(MainNode* node, float angle){ node->steer(angle); }
+    void MainNode_steerCommand(MainNode* node, float angle){ node->steerCommand(angle); }
+    void MainNode_brakeCommand(MainNode* node, float value){ node->brakeCommand(value); }
 }
 
 // int main()
