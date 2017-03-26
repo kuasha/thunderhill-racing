@@ -13,6 +13,10 @@ from keras import backend as K
 from Preprocess import *
 import cv2
 import time
+from data_buffer import DataBuffer
+import queue
+import threading
+
 
 f = h5py.File("multiModel.h5", mode='r')
 model_version = f.attrs.get('keras_version')
@@ -28,6 +32,9 @@ def customLoss(y_true, y_pred):
 model = load_model("multiModel.h5", custom_objects={'customLoss':customLoss})
 graph = tf.get_default_graph()
 
+data_buffer = DataBuffer()
+res_queue = queue.Queue()
+
 
 def copyImage(byte_array, imageSize):
     if imageSize > 8:
@@ -40,29 +47,35 @@ def copyImage(byte_array, imageSize):
 
 
 def imageReceived(imageSize, rawImage):
+	jpegImage = copyImage(rawImage, imageSize)
+	data_buffer.add_item(jpegImage)
+	try:
+		prediction = res_queue.get()
+		Node.steerCommand(c_float(prediction[0]))
+		Node.throttleCommand(c_float(prediction[1]))
+		Node.brakeCommand(c_float(prediction[2]))
+	except queue.Queue.Empty:
+		pass
+
+
+def make_prediction():
 	global graph
-	t = time.time()
-	with graph.as_default():
-		jpegImage = copyImage(rawImage, imageSize)
-		print("Copy Image", time.time() - t)
-		t = time.time()
-		image = Image.open(BytesIO(jpegImage))
-		print("Open Image", time.time() - t)
-		t = time.time()
-		# image.save('test.jpg')
-		# image = cv2.imread('test.jpg', 1)
-		image_array = np.asarray(image)
-		image_array = cv2.resize(image_array, (320, 160))
-		print("Resize Image", time.time() - t)
-		t = time.time()
-		steering_angle, throttle, brake_value = model.predict([preprocessImage(image_array)[None,:,:,:]])
-		print("Predict", time.time() - t)
-		t = time.time()
-		Node.steerCommand(c_float(steering_angle))
-		Node.brakeCommand(c_float(brake_value))
-		print("Commands sent", time.time() - t)
-		Node.throttleCommand(c_float(throttle))
+	while True:
+		with graph.as_default():
+			jpeg_image = data_buffer.get_item_for_processing()
+			image = Image.open(BytesIO(jpeg_image))
+			image_array = np.asarray(image)
+			image_array = cv2.resize(image_array, (320, 160))
+			steering_angle, throttle, brake_value = model.predict([preprocessImage(image_array)[None,:,:,:]])
+			if res_queue.full(): # maintain a single most recent prediction in the queue
+				res_queue.get()
+			res_queue.put((steering_angle, throttle, brake_value))
 
 
+thread = threading.Thread(target=make_prediction, args=())
+thread.daemon = True
+thread.start()
+		
+		
 Node = MainNode(imageReceived)
 Node.connectPolySync()
