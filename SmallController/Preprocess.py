@@ -120,11 +120,7 @@ def preprocessImage(image):
     This function represents the default preprocessing for 
     an image to prepare them for the network
     """
-    print("before")
-    print(image.shape)
     image = image[image.shape[0]*2//5:,:,:]
-    print("after")
-    print(image.shape)
     image = cv2.cvtColor(image, cv2.COLOR_RGB2YCrCb)
     #image = cv2.convertScaleAbs(image, alpha=(1))
     #image = addGradientLayer(image, 7, (100,255), (0, np.pi/2))
