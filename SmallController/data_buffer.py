@@ -10,11 +10,14 @@ class DataBuffer():
 
 	def add_item(self, item):
 		if self.queue.full():
-			self.queue.get() # remove fist item from queue
-			self.queue.put(item)
+			self.queue.get(False) # remove fist item from queue
+			self.queue.put(item, False)
 		else:
-			self.queue.put(item)
+			self.queue.put(item, False)
 
 	def get_item_for_processing(self):
-		return self.queue.get()
+		try:
+			return self.queue.get(False)
+		except queue.Empty:
+			return None
 		
