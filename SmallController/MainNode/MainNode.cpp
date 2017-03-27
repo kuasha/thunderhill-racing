@@ -50,6 +50,7 @@ private:
     ps_msg_type _messageType;
     std::vector <unsigned char> imageData;
     unsigned int imageSize;
+    int maxGen = 4;
     int gen = 0;
 
 public:
@@ -79,7 +80,7 @@ public:
     {
         using namespace polysync::datamodel;
         gen++;
-        if (gen == 10)
+        if (gen == maxGen)
         {
             gen = 0;
             if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
