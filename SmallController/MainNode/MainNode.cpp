@@ -50,7 +50,7 @@ private:
     ps_msg_type _messageType;
     std::vector <unsigned char> imageData;
     unsigned int imageSize;
-    int maxGen = 4;
+    int maxGen = 2;
     int gen = 0;
 
 public:
