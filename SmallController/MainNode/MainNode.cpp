@@ -34,6 +34,7 @@
 #include <iostream>
 #include <PolySyncNode.hpp>
 #include <PolySyncDataModel.hpp>
+#include "polysync_dynamic_driver_commands.h"
 
 #ifndef NODE_FLAGS_VALUE
 #define NODE_FLAGS_VALUE (0)
@@ -48,10 +49,16 @@ class MainNode : public polysync::Node
 private:
     const string node_name = "polysync-python-test-client-cpp";
     ps_msg_type _messageType;
+    ps_msg_type _brakeReport;
+    ps_msg_type _steeringReport;
+    ps_msg_type _throttleReport;
     std::vector <unsigned char> imageData;
     unsigned int imageSize;
-    int maxGen = 2;
+    int maxGen = 3;
     int gen = 0;
+    int steeringID = 0;
+    int brakeID = 0;
+    int throttleID = 0;
 
 public:
     imageCallback imageRecieved = NULL;
@@ -74,11 +81,42 @@ public:
     {
         _messageType = getMessageTypeByName( "ps_image_data_msg" );
         registerListener( _messageType );
+         _steeringReport = getMessageTypeByName( "ps_platform_steering_report_msg" );
+        registerListener( _steeringReport );
+         _brakeReport = getMessageTypeByName( "ps_platform_brake_report_msg" );
+        registerListener( _brakeReport );
+         _throttleReport = getMessageTypeByName( "ps_platform_throttle_report_msg" );
+        registerListener( _throttleReport );
     }
 
     virtual void messageEvent( std::shared_ptr< polysync::Message > message )
     {
         using namespace polysync::datamodel;
+
+        if (std::shared_ptr < PlatformSteeringReportMessage > incomingMessage = getSubclass < PlatformSteeringReportMessage > (message))
+        {
+            if (steeringID == 0)
+            {
+                steeringID = incomingMessage->getHeaderSrcGuid();
+            }
+        }
+
+        if (std::shared_ptr < PlatformBrakeReportMessage > incomingMessage = getSubclass < PlatformBrakeReportMessage > (message))
+        {
+            if (brakeID == 0)
+            {
+                brakeID = incomingMessage->getHeaderSrcGuid();
+            }
+        }
+
+        if (std::shared_ptr < PlatformThrottleReportMessage > incomingMessage = getSubclass < PlatformThrottleReportMessage > (message))
+        {
+            if (throttleID == 0)
+            {
+                throttleID = incomingMessage->getHeaderSrcGuid();
+            }
+        }
+
         gen++;
         if (gen == maxGen)
         {
@@ -106,11 +144,13 @@ public:
                 }
             }
         }
+
     }
 
     void steerCommand(float angle)
     {
         polysync::datamodel::PlatformSteeringCommandMessage message( *this);
+        message.setHeaderSrcGuid(steeringID);
         message.setTimestamp( polysync::getTimestamp() );
         message.setSteeringWheelAngle(angle);
         message.setHeaderTimestamp( polysync::getTimestamp() );
@@ -121,6 +161,7 @@ public:
     void brakeCommand(float value)
     {
         polysync::datamodel::PlatformBrakeCommandMessage message( *this);
+        message.setHeaderSrcGuid(brakeID);
         message.setTimestamp( polysync::getTimestamp() );
         message.setBrakeCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
@@ -131,6 +172,7 @@ public:
     void throttleCommand(float value)
     {
         polysync::datamodel::PlatformThrottleCommandMessage message( *this);
+        message.setHeaderSrcGuid(throttleID);
         message.setTimestamp( polysync::getTimestamp() );
         message.setThrottleCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
