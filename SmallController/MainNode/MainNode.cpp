@@ -50,6 +50,7 @@ private:
     ps_msg_type _messageType;
     std::vector <unsigned char> imageData;
     unsigned int imageSize;
+    int gen = 0;
 
 public:
     imageCallback imageRecieved = NULL;
@@ -77,29 +78,32 @@ public:
     virtual void messageEvent( std::shared_ptr< polysync::Message > message )
     {
         using namespace polysync::datamodel;
-
-        if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
+        gen++;
+        if (gen == 10)
         {
-            if (incomingMessage->getPixelFormat() == PIXEL_FORMAT_MJPEG) {
-                std::vector <unsigned char> image = incomingMessage->getDataBuffer();
-                imageSize = image.size();
-                if (imageSize > imageData.size())
-                {
-                    imageData = vector<unsigned char> (imageSize);
-                }
-                unsigned char *p = imageData.data();
-                unsigned char *q = image.data();
-                for (unsigned int i=0; i<imageSize; i++)
-                {
-                    *p = *q;
-                    ++p;
-                    ++q;
-                }
-                if (imageRecieved != NULL) {
-                    imageRecieved(imageData.size(), imageData.data());
+            gen = 0;
+            if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
+            {
+                if (incomingMessage->getPixelFormat() == PIXEL_FORMAT_MJPEG) {
+                    std::vector <unsigned char> image = incomingMessage->getDataBuffer();
+                    imageSize = image.size();
+                    if (imageSize > imageData.size())
+                    {
+                        imageData = vector<unsigned char> (imageSize);
+                    }
+                    unsigned char *p = imageData.data();
+                    unsigned char *q = image.data();
+                    for (unsigned int i=0; i<imageSize; i++)
+                    {
+                        *p = *q;
+                        ++p;
+                        ++q;
+                    }
+                    if (imageRecieved != NULL) {
+                        imageRecieved(imageData.size(), imageData.data());
+                    }
                 }
             }
-
         }
     }
 
@@ -109,7 +113,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setSteeringWheelAngle(angle);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        polysync::sleepMicro( 1000 );
+        //polysync::sleepMicro( 1000 );
         message.print();
     }
 
@@ -119,7 +123,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setBrakeCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        polysync::sleepMicro( 1000 );
+        //polysync::sleepMicro( 1000 );
         message.print();
     }
 
@@ -129,7 +133,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setThrottleCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        polysync::sleepMicro( 1000000 );
+        //polysync::sleepMicro( 1000000 );
         message.print();
     }
 
