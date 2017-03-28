@@ -1,0 +1,2386 @@
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:39:39 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1438086475 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : spliced 7f3956a64700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490629179.275356419
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:39:39 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : spliced 7f3956a64700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490629179.275598484
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:39:39 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : spliced 7f3956a64700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490629179.276654730
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:39:39 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : spliced 7f3956a64700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629179.276684244
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:39:39 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : ddsi2 7f394e519700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629179.283929661
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:39:39 EDT 2017
+Description : The durability service can be identified by ID: 1438086475
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : durability 7f394e8a3700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490629179.388802888
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:39:46 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : durability 7f394e8a3700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629186.798575236
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:29 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : ddsi2 7f394e519700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629229.886844442
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:31 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : durability 7f394e8a3700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629231.464629161
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:31 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : spliced 7f3956a64700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490629231.484229308
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:31 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15181>
+Thread      : spliced 7f3956a64700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629231.484463955
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:37 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1553813473 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : spliced 7f43ed63f700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490629237.511178796
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:37 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : spliced 7f43ed63f700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490629237.511375272
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:37 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : spliced 7f43ed63f700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490629237.512419159
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:37 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : spliced 7f43ed63f700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629237.512448616
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:37 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : ddsi2 7f43e50f4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629237.521181124
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:37 EDT 2017
+Description : The durability service can be identified by ID: 1553813473
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : durability 7f43e547e700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490629237.624156886
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:45 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : durability 7f43e547e700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629245.034064346
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:45 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : ddsi2 7f43e50f4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629245.935983518
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:47 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : durability 7f43e547e700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629247.634051731
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:47 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : spliced 7f43ed63f700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490629247.730673703
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:40:47 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <15239>
+Thread      : spliced 7f43ed63f700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629247.730885028
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:21 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1452809093 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : spliced 7f30edbe6700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490629701.256412195
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:21 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : spliced 7f30edbe6700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490629701.256587518
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:21 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : spliced 7f30edbe6700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490629701.257411558
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:21 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : spliced 7f30edbe6700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629701.257445399
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:21 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : ddsi2 7f30e4503700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490629701.263033211
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:21 EDT 2017
+Description : The durability service can be identified by ID: 1452809093
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : durability 7f30e4ec0700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490629701.370632835
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:22 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : ddsi2 7f30e4503700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629702.485273709
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:24 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : durability 7f30e4ec0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629704.467791006
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:24 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : spliced 7f30edbe6700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490629704.479865319
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 11:48:24 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15430>
+Thread      : spliced 7f30edbe6700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490629704.480076295
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:14 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 2022926840 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : spliced 7f7ca78ac700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490630894.425172127
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:14 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : spliced 7f7ca78ac700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490630894.425368939
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:14 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : spliced 7f7ca78ac700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490630894.426307775
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:14 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : spliced 7f7ca78ac700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490630894.426335631
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:14 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : ddsi2 7f7c9e1c9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490630894.432171208
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:14 EDT 2017
+Description : The durability service can be identified by ID: 2022926840
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : durability 7f7c9eb86700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490630894.539494333
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:15 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : ddsi2 7f7c9e1c9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490630895.652045380
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:17 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : durability 7f7c9eb86700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490630897.636147839
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:17 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : spliced 7f7ca78ac700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490630897.648760165
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 12:08:17 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <15865>
+Thread      : spliced 7f7ca78ac700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490630897.648962352
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:01 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1063965570 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : spliced 7f83990ee700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490641681.458980375
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:01 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : spliced 7f83990ee700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490641681.459156327
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:01 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : spliced 7f83990ee700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490641681.459822791
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:01 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : spliced 7f83990ee700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490641681.459857235
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:01 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : ddsi2 7f838fa0b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490641681.468427133
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:02 EDT 2017
+Description : The durability service can be identified by ID: 1063965570
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : durability 7f83903c8700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490641682.571782982
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:09 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : durability 7f83903c8700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490641689.975610967
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:44 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : ddsi2 7f838fa0b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490641724.867478018
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:46 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : durability 7f83903c8700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490641726.594698951
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:46 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : spliced 7f83990ee700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490641726.662186532
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:08:46 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29501>
+Thread      : spliced 7f83990ee700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490641726.662239448
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:09:29 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1101110279 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : spliced 7f731aaa0700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490641769.446263524
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:09:29 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : spliced 7f731aaa0700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490641769.446472661
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:09:29 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : spliced 7f731aaa0700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490641769.447187096
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:09:29 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : spliced 7f731aaa0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490641769.447206561
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:09:29 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : ddsi2 7f73113bd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490641769.453311105
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:09:30 EDT 2017
+Description : The durability service can be identified by ID: 1101110279
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : durability 7f7311d7a700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490641770.558290345
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:09:37 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : durability 7f7311d7a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490641777.962384033
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:18:18 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : ddsi2 7f73113bd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490642298.484974590
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:18:20 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : durability 7f7311d7a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490642300.654302953
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:18:20 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : spliced 7f731aaa0700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490642300.681733372
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 15:18:20 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <29595>
+Thread      : spliced 7f731aaa0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490642300.681787860
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:09 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 633138661 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : spliced 7ff71706b700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490645949.371133512
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:09 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : spliced 7ff71706b700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490645949.371305823
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:09 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : spliced 7ff71706b700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490645949.372103780
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:09 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : spliced 7ff71706b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490645949.372124475
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:09 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : ddsi2 7ff70eb1a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490645949.377991093
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:19:10 EDT 2017
+Description : writer 25bcede5:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : ddsi2 7ff70eb1a700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490645950.382194701
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:19:10 EDT 2017
+Description : writer 25bcede5:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : recv 7ff70e9b3700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490645950.382530755
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:10 EDT 2017
+Description : The durability service can be identified by ID: 633138661
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : durability 7ff70eea4700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490645950.681105735
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:18 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : durability 7ff70eea4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490645958.089015760
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:18 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : ddsi2 7ff70eb1a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490645958.222667177
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:19 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : durability 7ff70eea4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490645959.691190637
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:19 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : spliced 7ff71706b700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490645959.718452501
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:19:19 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30385>
+Thread      : spliced 7ff71706b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490645959.718559917
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:38 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1147843427 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : spliced 7fa171eca700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490646398.968566201
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:38 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : spliced 7fa171eca700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490646398.968831830
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:38 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : spliced 7fa171eca700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490646398.969883327
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:38 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : spliced 7fa171eca700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490646398.969917431
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:38 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : ddsi2 7fa169979700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490646398.975521029
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:26:39 EDT 2017
+Description : writer 446ab363:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : ddsi2 7fa169979700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490646399.979495213
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:26:39 EDT 2017
+Description : writer 446ab363:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : recv 7fa169812700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490646399.979940940
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:40 EDT 2017
+Description : The durability service can be identified by ID: 1147843427
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : durability 7fa169d03700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490646400.279766237
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:47 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : durability 7fa169d03700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490646407.687600616
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:47 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : ddsi2 7fa169979700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646407.818771014
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:49 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : durability 7fa169d03700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646409.287504224
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:49 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : spliced 7fa171eca700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490646409.317529553
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:26:49 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30528>
+Thread      : spliced 7fa171eca700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646409.317741968
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:02 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 522933465 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : spliced 7f81b88f3700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490646482.703075530
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:02 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : spliced 7f81b88f3700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490646482.703247987
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:02 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : spliced 7f81b88f3700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490646482.703948122
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:02 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : spliced 7f81b88f3700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490646482.703981719
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:02 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : ddsi2 7f81b03a2700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490646482.709973964
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:03 EDT 2017
+Description : The durability service can be identified by ID: 522933465
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : durability 7f81b072c700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490646483.816103569
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:08 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : ddsi2 7f81b03a2700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646488.352609258
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:09 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : durability 7f81b072c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646489.817250589
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:09 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : spliced 7f81b88f3700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490646489.847058223
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:28:09 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30597>
+Thread      : spliced 7f81b88f3700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646489.847141851
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:26 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1742159649 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : spliced 7f9786ccd700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490646686.687246268
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:26 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : spliced 7f9786ccd700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490646686.687439859
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:26 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : spliced 7f9786ccd700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490646686.688456247
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:26 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : spliced 7f9786ccd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490646686.688489121
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:26 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : ddsi2 7f977e77c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490646686.697437036
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:31:27 EDT 2017
+Description : writer 67d73f21:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : ddsi2 7f977e77c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490646687.751161806
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:31:27 EDT 2017
+Description : writer 67d73f21:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : recv 7f977e5e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490646687.751481132
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:28 EDT 2017
+Description : The durability service can be identified by ID: 1742159649
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : durability 7f977eb06700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490646688.001060879
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:31 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : ddsi2 7f977e77c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646691.143023719
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:33 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : durability 7f977eb06700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646693.003208228
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:33 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : spliced 7f9786ccd700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490646693.038482354
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:31:33 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30696>
+Thread      : spliced 7f9786ccd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490646693.038594653
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:04 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 622250432 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : spliced 7f2d6d0df700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490647024.759548932
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:04 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : spliced 7f2d6d0df700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490647024.759742435
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:04 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : spliced 7f2d6d0df700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490647024.760584846
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:04 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : spliced 7f2d6d0df700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490647024.760607621
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:04 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : ddsi2 7f2d64b8e700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490647024.770744606
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:37:05 EDT 2017
+Description : writer 2516c9c0:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : ddsi2 7f2d64b8e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490647025.774587423
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:37:05 EDT 2017
+Description : writer 2516c9c0:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : recv 7f2d649f4700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490647025.774943056
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:06 EDT 2017
+Description : The durability service can be identified by ID: 622250432
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : durability 7f2d64f18700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490647026.071296597
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:13 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : durability 7f2d64f18700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490647033.478346997
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:15 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 180605913 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : spliced 7ff1764d1700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490647035.108274851
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:15 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : spliced 7ff1764d1700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490647035.108491642
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:15 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : spliced 7ff1764d1700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490647035.109479448
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:15 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : spliced 7ff1764d1700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490647035.109506672
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:15 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : ddsi2 7ff16cdee700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490647035.116832196
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:37:16 EDT 2017
+Description : writer ac3d3d9:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : ddsi2 7ff16cdee700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490647036.121183959
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:37:16 EDT 2017
+Description : writer ac3d3d9:92:1:2c2 considering reader 2516c9c0:92:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : ddsi2 7ff16cdee700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490647036.121257698
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:37:16 EDT 2017
+Description : writer ac3d3d9:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : recv 7ff16dc3b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490647036.122044042
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 16:37:16 EDT 2017
+Description : writer ac3d3d9:92:1:2c2 considering reader 2516c9c0:92:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : recv 7ff16dc3b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490647036.122107181
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:16 EDT 2017
+Description : The durability service can be identified by ID: 180605913
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : durability 7ff16d7ab700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490647036.223813923
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:37:23 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : durability 7ff16d7ab700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490647043.628869925
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:00 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : ddsi2 7f2d64b8e700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490648100.125553070
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:00 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : ddsi2 7ff16cdee700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490648100.141109029
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:02 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : durability 7f2d64f18700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490648102.183387331
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:02 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : spliced 7f2d6d0df700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490648102.219913509
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:02 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <30829>
+Thread      : spliced 7f2d6d0df700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490648102.220124428
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:02 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : durability 7ff16d7ab700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490648102.383663068
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:02 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : spliced 7ff1764d1700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490648102.440432071
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 16:55:02 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <30894>
+Thread      : spliced 7ff1764d1700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490648102.440638987
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:21:43 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 175630192 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : spliced 7f371c82a700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490660503.764590411
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:21:43 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : spliced 7f371c82a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490660503.764822865
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:21:43 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : spliced 7f371c82a700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490660503.765750329
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:21:43 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : spliced 7f371c82a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660503.765778088
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:21:43 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : ddsi2 7f37142d9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660503.771934090
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:21:45 EDT 2017
+Description : The durability service can be identified by ID: 175630192
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : durability 7f3714663700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490660505.076181389
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:21:52 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : durability 7f3714663700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660512.485149611
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:22:27 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : ddsi2 7f37142d9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490660547.437465969
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:22:29 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : durability 7f3714663700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490660549.128444191
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:22:29 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : spliced 7f371c82a700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490660549.133464821
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:22:29 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1156>
+Thread      : spliced 7f371c82a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490660549.133689195
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:05 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 928179395 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : spliced 7f4ef3375700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490660585.749641228
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:05 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : spliced 7f4ef3375700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490660585.749840959
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:05 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : spliced 7f4ef3375700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490660585.750749787
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:05 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : spliced 7f4ef3375700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660585.750777731
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:05 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : ddsi2 7f4eeae24700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660585.757294910
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:06 EDT 2017
+Description : The durability service can be identified by ID: 928179395
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : durability 7f4eeb1ae700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490660586.864080911
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:11 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : ddsi2 7f4eeae24700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490660591.392259292
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:12 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : durability 7f4eeb1ae700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490660592.866061860
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:12 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : spliced 7f4ef3375700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490660592.891011631
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:23:12 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1221>
+Thread      : spliced 7f4ef3375700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490660592.891137625
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:26:51 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 87873006 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : spliced 7f968b3f9700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490660811.207588207
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:26:51 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : spliced 7f968b3f9700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490660811.207778099
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:26:51 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : spliced 7f968b3f9700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490660811.208669829
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:26:51 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : spliced 7f968b3f9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660811.208696498
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:26:51 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : ddsi2 7f9682ea8700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660811.216090163
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:26:52 EDT 2017
+Description : writer 53cd5ee:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : ddsi2 7f9682ea8700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490660812.219847976
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:26:52 EDT 2017
+Description : writer 53cd5ee:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : recv 7f9682d41700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490660812.220623381
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:26:52 EDT 2017
+Description : The durability service can be identified by ID: 87873006
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : durability 7f9683232700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490660812.327962458
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:26:59 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : durability 7f9683232700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490660819.735622758
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:30:21 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 584266330 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : spliced 7fab375f5700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490661021.786459033
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:30:21 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : spliced 7fab375f5700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490661021.786633862
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:30:21 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : spliced 7fab375f5700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490661021.787541638
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:30:21 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : spliced 7fab375f5700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661021.787577753
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:30:21 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : ddsi2 7fab2df12700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661021.793646809
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:30:22 EDT 2017
+Description : The durability service can be identified by ID: 584266330
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : durability 7fab2e8cf700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490661022.901971347
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:30:30 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : durability 7fab2e8cf700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661030.307437807
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:10 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : ddsi2 7f9682ea8700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661130.544537624
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:10 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : ddsi2 7fab2df12700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661130.566431681
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:12 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : durability 7fab2e8cf700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661132.000422878
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:12 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : spliced 7fab375f5700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490661132.062250219
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:12 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1546>
+Thread      : spliced 7fab375f5700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661132.062440106
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:12 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : durability 7f9683232700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661132.459190170
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:12 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : spliced 7f968b3f9700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490661132.541300489
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:12 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1444>
+Thread      : spliced 7f968b3f9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661132.541456926
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:18 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1510987019 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : spliced 7f67fdcc4700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490661138.596432984
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:18 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : spliced 7f67fdcc4700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490661138.596623873
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:18 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : spliced 7f67fdcc4700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490661138.597434062
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:18 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : spliced 7f67fdcc4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661138.597474284
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:18 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : ddsi2 7f67f5773700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661138.604568724
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:32:19 EDT 2017
+Description : writer 5a0fd50b:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : ddsi2 7f67f5773700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490661139.683500760
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:32:19 EDT 2017
+Description : writer 5a0fd50b:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : recv 7f67f560c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490661139.685516924
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:19 EDT 2017
+Description : The durability service can be identified by ID: 1510987019
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : durability 7f67f5afd700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490661139.712639300
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:22 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1533083671 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : spliced 7f36d1109700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490661142.719241007
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:22 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : spliced 7f36d1109700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490661142.719461244
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:22 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : spliced 7f36d1109700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490661142.720402966
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:22 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : spliced 7f36d1109700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661142.720438104
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:22 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : ddsi2 7f36c7a26700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661142.726181143
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:32:23 EDT 2017
+Description : writer 5b610017:92:1:2c2 considering reader 5a0fd50b:92:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : ddsi2 7f36c7a26700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490661143.728394968
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:32:23 EDT 2017
+Description : writer 5b610017:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : ddsi2 7f36c7a26700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490661143.728486277
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:32:23 EDT 2017
+Description : writer 5b610017:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : recv 7f36c8873700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490661143.730466794
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:32:23 EDT 2017
+Description : writer 5b610017:92:1:2c2 considering reader 5a0fd50b:92:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : recv 7f36c8873700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490661143.730569912
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:23 EDT 2017
+Description : The durability service can be identified by ID: 1533083671
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : durability 7f36c83e3700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490661143.830563093
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:27 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : durability 7f67f5afd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661147.119891685
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:31 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : durability 7f36c83e3700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661151.237357251
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:47 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : ddsi2 7f36c7a26700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661167.508506535
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:48 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : durability 7f36c83e3700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661168.852922754
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:48 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : spliced 7f36d1109700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490661168.901588164
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:48 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1669>
+Thread      : spliced 7f36d1109700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661168.901816269
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:52 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : ddsi2 7f67f5773700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661172.691385831
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:54 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : durability 7f67f5afd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661174.741935407
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:54 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : spliced 7f67fdcc4700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490661174.785040903
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:32:54 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1612>
+Thread      : spliced 7f67fdcc4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661174.785223810
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:03 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1770314756 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : spliced 7f3ba23ce700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490661183.134991415
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:03 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : spliced 7f3ba23ce700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490661183.135188094
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:03 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : spliced 7f3ba23ce700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490661183.135986282
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:03 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : spliced 7f3ba23ce700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661183.136014055
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:03 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : ddsi2 7f3b99e7d700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661183.145012030
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:04 EDT 2017
+Description : The durability service can be identified by ID: 1770314756
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : durability 7f3b9a207700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490661184.248952169
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:08 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1545546326 from [1,2147483647]
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : spliced 7f66ea0e6700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490661188.955008531
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:08 EDT 2017
+Description : Service cmsoap disabled
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : spliced 7f66ea0e6700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490661188.955181773
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:08 EDT 2017
+Description : Durability Client for spliced started
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : spliced 7f66ea0e6700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490661188.955917965
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:08 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : spliced 7f66ea0e6700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661188.955940095
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:08 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : ddsi2 7f66e0a03700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661188.962938467
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:33:10 EDT 2017
+Description : writer 5c1f2a56:92:1:2c2 considering reader 6984dc04:92:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : ddsi2 7f66e0a03700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490661190.067355220
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:33:10 EDT 2017
+Description : writer 5c1f2a56:92:1:2c2 considering reader 52a72126:b4:1:2c7 non-responsive
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : ddsi2 7f66e0a03700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490661190.067458461
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:33:10 EDT 2017
+Description : writer 5c1f2a56:92:1:2c2 considering reader 52a72126:b4:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : recv 7f66e1850700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490661190.068295190
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 20:33:10 EDT 2017
+Description : writer 5c1f2a56:92:1:2c2 considering reader 6984dc04:92:1:2c7 responsive again
+
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : recv 7f66e1850700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490661190.068496642
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:10 EDT 2017
+Description : The durability service can be identified by ID: 1545546326
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : durability 7f66e13c0700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490661190.369693677
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:11 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : durability 7f3b9a207700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661191.656816025
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:33:17 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : durability 7f66e13c0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490661197.776323243
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:11 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : ddsi2 7f3b99e7d700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661611.257733318
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:11 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : ddsi2 7f66e0a03700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661611.275349818
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:13 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : durability 7f3b9a207700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661613.335842322
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:13 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : spliced 7f3ba23ce700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490661613.354646759
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:13 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-core-dynamic-driver <1731>
+Thread      : spliced 7f3ba23ce700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661613.354852114
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:13 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : durability 7f66e13c0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661613.450475020
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:13 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : spliced 7f66ea0e6700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490661613.475363025
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 20:40:13 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : jchen-P870DMx-G
+Process     : polysync-sharedmem-image-data-viewer <1789>
+Thread      : spliced 7f66ea0e6700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490661613.475489094
