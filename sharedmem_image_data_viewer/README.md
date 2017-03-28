@@ -96,7 +96,7 @@ Stream mapping:
 Press [q] to stop, [?] for help
 frame=   23 fps= 15 q=-0.0 size=N/A time=00:01:17.83 bitrate=N/A    
 ```
-4. Update the dynamic node using the Node ID from step 2. 
+4. Update the dynamic node using the Node ID from step 2d. 
 ```bash
 (tensorflow) jchen@jchen-P870DMx-G:~/SDCND/thunderhill-racing/sharedmem_image_data_viewer$ polysync-core-dynamic-driver -n 15 -U
 2017-03-27 20:22:33 DEBUG [1216:node.c:998] update node SDF configuration
@@ -113,7 +113,7 @@ frame=   23 fps= 15 q=-0.0 size=N/A time=00:01:17.83 bitrate=N/A
 2017-03-27 20:26:52.03s DEBUG  [video-device-1688914372646382] - using publish encoder -- src_fmt: 10 - publish fmt: 5 - w/h: 320/152
 2017-03-27 20:26:52.03s DEBUG  [video-device-1688914372646382] - transition to state: OK - timestamp: 1490660812443747
 ```
-5. Start the `polysync-sharedmem-image-data-viewer` client
+5. Start the `polysync-sharedmem-image-data-viewer` client using the `1` shared memory key set up earlier in step 2c.
 ```bash
 jchen@jchen-P870DMx-G:~/SDCND/thunderhill-racing/sharedmem_image_data_viewer$ ./bin/polysync-sharedmem-image-data-viewer 1
 2017-03-27 20:30:21.03s DEBUG  [polysync-sharedmem-image-data-viewer-] - build version 2.0.10-1487272519
