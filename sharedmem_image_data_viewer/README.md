@@ -42,9 +42,13 @@ $ ipcs -l
 2. Follow the example for [Connect USB Webcam](http://docs.polysync.io/articles/tutorials-and-examples/tutorials/connecting-to-a-sensor-webcam/), with the following changes:
 
     a. Set the resolution to 320x160 for all sources and publish sizes. 
+
     b. Set video device to the one you created in step 4 for __Install Dependencies__. 
+
     c. Set Video Device Shared.. to `1` 
+
     d. Make sure you press the `ENTER` key to save the changes and note down the Node ID of the camera.  In this example, Node ID is 15. 
+
     ![SDFConfigurator1](./images/SDFConfigurator1.png) 
     ![SDFConfigurator2](./images/SDFConfigurator2.png) 
     ![SDFConfigurator3](./images/SDFConfigurator3.png) 
