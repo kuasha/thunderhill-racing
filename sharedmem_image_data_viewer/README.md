@@ -40,6 +40,7 @@ $ ipcs -l
 
 1. Start up `polysync-core-manager` if not already done so.
 2. Follow the example for [Connect USB Webcam](http://docs.polysync.io/articles/tutorials-and-examples/tutorials/connecting-to-a-sensor-webcam/), with the following changes:
+
     a. Set the resolution to 320x160 for all sources and publish sizes. 
     b. Set video device to the one you created in step 4 for __Install Dependencies__. 
     c. Set Video Device Shared.. to `1` 
@@ -47,6 +48,7 @@ $ ipcs -l
     ![SDFConfigurator1](./images/SDFConfigurator1.png) 
     ![SDFConfigurator2](./images/SDFConfigurator2.png) 
     ![SDFConfigurator3](./images/SDFConfigurator3.png) 
+
 3. Start up the video stream using __ffmpeg__.  Use the `-r` option to control the playback frame rate.  In this example, we will use the saved dataset: [https://github.com/kuasha/thunderhill_data/tree/master/dataset_sim_004_km_320x160_cones_brakes](https://github.com/kuasha/thunderhill_data/tree/master/dataset_sim_004_km_320x160_cones_brakes) 
 ```bash
 jchen@jchen-P870DMx-G:~/SDCND/thunderhill_data/dataset_sim_004_km_320x160_cones_brakes$ ffmpeg -re -i dataset_sim_004_km_320x160_cones_brakes.mp4 -pix_fmt rgb24 -r 15 -f v4l2 /dev/video1
