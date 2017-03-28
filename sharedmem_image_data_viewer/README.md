@@ -40,14 +40,14 @@ $ ipcs -l
 
 1. Start up `polysync-core-manager` if not already done so.
 2. Follow the example for [Connect USB Webcam](http://docs.polysync.io/articles/tutorials-and-examples/tutorials/connecting-to-a-sensor-webcam/), with the following changes:
-    a. Set the resolution to 320x160 for all sources and publish sizes.
-    b. Set video device to the one you created in step 4 for __Install Dependencies__.
-    c. Set Video Device Shared.. to `1`
-    d. Make sure you press the `ENTER` key to save the changes and note down the Node ID of the camera.  In this example, Node ID is 15.
-    ![SDFConfigurator1](./images/SDFConfigurator1.png)
-    ![SDFConfigurator2](./images/SDFConfigurator2.png)
-    ![SDFConfigurator3](./images/SDFConfigurator3.png)
-3. Start up the video stream using __ffmpeg__.  Use the `-r` option to control the playback frame rate.  In this example, we will use the saved dataset: [https://github.com/kuasha/thunderhill_data/tree/master/dataset_sim_004_km_320x160_cones_brakes](https://github.com/kuasha/thunderhill_data/tree/master/dataset_sim_004_km_320x160_cones_brakes)
+    a. Set the resolution to 320x160 for all sources and publish sizes. 
+    b. Set video device to the one you created in step 4 for __Install Dependencies__. 
+    c. Set Video Device Shared.. to `1` 
+    d. Make sure you press the `ENTER` key to save the changes and note down the Node ID of the camera.  In this example, Node ID is 15. 
+    ![SDFConfigurator1](./images/SDFConfigurator1.png) 
+    ![SDFConfigurator2](./images/SDFConfigurator2.png) 
+    ![SDFConfigurator3](./images/SDFConfigurator3.png) 
+3. Start up the video stream using __ffmpeg__.  Use the `-r` option to control the playback frame rate.  In this example, we will use the saved dataset: [https://github.com/kuasha/thunderhill_data/tree/master/dataset_sim_004_km_320x160_cones_brakes](https://github.com/kuasha/thunderhill_data/tree/master/dataset_sim_004_km_320x160_cones_brakes) 
 ```bash
 jchen@jchen-P870DMx-G:~/SDCND/thunderhill_data/dataset_sim_004_km_320x160_cones_brakes$ ffmpeg -re -i dataset_sim_004_km_320x160_cones_brakes.mp4 -pix_fmt rgb24 -r 15 -f v4l2 /dev/video1
 ffmpeg version 2.8.11-0ubuntu0.16.04.1 Copyright (c) 2000-2017 the FFmpeg developers
@@ -90,7 +90,7 @@ Stream mapping:
 Press [q] to stop, [?] for help
 frame=   23 fps= 15 q=-0.0 size=N/A time=00:01:17.83 bitrate=N/A    
 ```
-4. Update the dynamic node using the Node ID from step 2.
+4. Update the dynamic node using the Node ID from step 2. 
 ```bash
 (tensorflow) jchen@jchen-P870DMx-G:~/SDCND/thunderhill-racing/sharedmem_image_data_viewer$ polysync-core-dynamic-driver -n 15 -U
 2017-03-27 20:22:33 DEBUG [1216:node.c:998] update node SDF configuration
