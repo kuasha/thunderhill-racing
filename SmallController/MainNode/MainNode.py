@@ -7,7 +7,7 @@ class MainNode(object):
         self.imagefunc = imagefunc
 
         # set img callback
-        self.FUNC1 = CFUNCTYPE(None, c_int, POINTER(c_ubyte))
+        self.FUNC1 = CFUNCTYPE(None, c_int, POINTER(c_ubyte), c_float, c_float, c_float)
         self.func1 = self.FUNC1(self.imagefunc)
         lib.MainNode_setImageCallback(self.obj, self.func1)
 
