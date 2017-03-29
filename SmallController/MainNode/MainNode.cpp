@@ -63,9 +63,9 @@ private:
     int brakeID = 0;
     int throttleID = 0;
 
-    float velocity = 0;
-    float latitude = 0;
-    float longitude = 0;
+    double velocity = 0;
+    double latitude = 0;
+    double longitude = 0;
 
 public:
     imageCallback imageRecieved = NULL;
