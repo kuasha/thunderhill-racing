@@ -76,7 +76,7 @@ def make_prediction():
 	while True:
 		with graph.as_default():
 			item = data_buffer.get_item_for_processing()
-			if item:
+			if item and len(item) == 4:
 				jpeg_image = item[0]
 				speed = item[1]
 				lat = item[2]
