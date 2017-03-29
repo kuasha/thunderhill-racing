@@ -35,6 +35,7 @@
 #include <PolySyncNode.hpp>
 #include <PolySyncDataModel.hpp>
 #include "polysync_dynamic_driver_commands.h"
+#include <math.h>
 
 #ifndef NODE_FLAGS_VALUE
 #define NODE_FLAGS_VALUE (0)
@@ -42,7 +43,7 @@
 
 using namespace std;
 
-typedef void (*imageCallback)(int, unsigned char *);
+typedef void (*imageCallback)(int, unsigned char *, float, float, float);
 
 class MainNode : public polysync::Node
 {
@@ -52,6 +53,8 @@ private:
     ps_msg_type _brakeReport;
     ps_msg_type _steeringReport;
     ps_msg_type _throttleReport;
+    ps_msg_type _platformMotion;
+
     std::vector <unsigned char> imageData;
     unsigned int imageSize;
     int maxGen = 3;
@@ -59,6 +62,10 @@ private:
     int steeringID = 0;
     int brakeID = 0;
     int throttleID = 0;
+
+    double velocity = 0;
+    double latitude = 0;
+    double longitude = 0;
 
 public:
     imageCallback imageRecieved = NULL;
@@ -87,6 +94,8 @@ public:
         registerListener( _brakeReport );
          _throttleReport = getMessageTypeByName( "ps_platform_throttle_report_msg" );
         registerListener( _throttleReport );
+        _platformMotion = getMessageTypeByName( "ps_platform_motion_msg");
+        registerListener( _platformMotion );
     }
 
     virtual void messageEvent( std::shared_ptr< polysync::Message > message )
@@ -121,6 +130,20 @@ public:
         if (gen == maxGen)
         {
             gen = 0;
+
+            if (std::shared_ptr < PlatformMotionMessage > incomingMessage = getSubclass < PlatformMotionMessage > (message))
+            {
+                std::array< DDS_double, 3 > vel = incomingMessage->getVelocity();
+
+                if (sizeof(vel)/sizeof(vel[0]) == 3)
+                {
+                    velocity = sqrt(pow(vel[0], 2) + pow(vel[1], 2) + pow(vel[2], 2));
+                }
+                latitude = incomingMessage->getLatitude();
+                longitude = incomingMessage->getLongitude(); 
+                std::cout << "got speed: " << velocity << " lat: " << latitude << " long: " << longitude << std::endl;
+            }
+
             if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
             {
                 if (incomingMessage->getPixelFormat() == PIXEL_FORMAT_MJPEG) {
@@ -139,10 +162,11 @@ public:
                         ++q;
                     }
                     if (imageRecieved != NULL) {
-                        imageRecieved(imageData.size(), imageData.data());
+                        imageRecieved(imageData.size(), imageData.data(), velocity, latitude, longitude);
                     }
                 }
             }
+
         }
 
     }
@@ -154,7 +178,6 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setSteeringWheelAngle(angle);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        //polysync::sleepMicro( 1000 );
         message.print();
     }
 
@@ -165,7 +188,6 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setBrakeCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        //polysync::sleepMicro( 1000 );
         message.print();
     }
 
@@ -176,7 +198,6 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setThrottleCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
-        //polysync::sleepMicro( 1000000 );
         message.print();
     }
 

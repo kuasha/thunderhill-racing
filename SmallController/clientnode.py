@@ -34,6 +34,17 @@ graph = tf.get_default_graph()
 data_buffer = DataBuffer()
 res_queue = queue.Queue(maxsize=1)
 
+idxs = [0, 1, 2]
+means = [-122.33790211, 39.53881540, 62.68238949]
+stds = [0.00099555, 0.00180817, 13.48539298]
+
+
+def normalize_vector(xVec):
+	for i, mean, std in zip(idxs, means, stds):
+		xVec[i] -= mean
+		xVec[i] /= std
+	return xVec
+
 
 def copyImage(byte_array, imageSize):
 	if imageSize > 8:
@@ -45,9 +56,11 @@ def copyImage(byte_array, imageSize):
 	return byte_array
 
 
-def imageReceived(imageSize, rawImage):
+def imageReceived(imageSize, rawImage, speed, lat, lon):
+	print("in image received")
+	print(speed, lat, lon)
 	jpegImage = copyImage(rawImage, imageSize)
-	data_buffer.add_item(jpegImage)
+	data_buffer.add_item((jpegImage, speed, lat, lon))
 	try:
 		prediction = res_queue.get(block=False)
 		Node.steerCommand(c_float(prediction[0]))
@@ -59,17 +72,25 @@ def imageReceived(imageSize, rawImage):
 
 def make_prediction():
 	global graph
+	print('make prediction')
 	while True:
 		with graph.as_default():
-			jpeg_image = data_buffer.get_item_for_processing()
-			if jpeg_image:
-				image = Image.open(BytesIO(jpeg_image))
-				image_array = np.asarray(image)
-				image_array = cv2.resize(image_array, (320, 160))
-				steering_angle, throttle, brake_value = model.predict([preprocessImage(image_array)[None,:,:,:]])
-				if res_queue.full(): # maintain a single most recent prediction in the queue
-					res_queue.get(False)
-				res_queue.put((steering_angle, throttle, brake_value))
+			item = data_buffer.get_item_for_processing()
+			if item and len(item) == 4:
+				jpeg_image = item[0]
+				speed = item[1]
+				lat = item[2]
+				lon = item[3]
+				xVec = np.array([lon, lat, speed])
+				norm_xVec = normalize_vector(xVec)
+				if jpeg_image:
+					image = Image.open(BytesIO(jpeg_image))
+					image_array = np.asarray(image)
+					image_array = cv2.resize(image_array, (320, 160))
+					steering_angle, throttle, brake_value = model.predict([preprocessImage(image_array)[None,:,:,:], norm_xVec[None,:]])
+					if res_queue.full(): # maintain a single most recent prediction in the queue
+						res_queue.get(False)
+					res_queue.put((steering_angle, throttle, brake_value))
 
 
 thread = threading.Thread(target=make_prediction, args=())
