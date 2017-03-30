@@ -1,0 +1,490 @@
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:08 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1855435678 from [1,2147483647]
+Node        : UbuntuPS
+Process     : recorder-node-cpp <6646>
+Thread      : spliced 7fef8dcdd700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490845088.816577000
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:08 EDT 2017
+Description : Service cmsoap disabled
+Node        : UbuntuPS
+Process     : recorder-node-cpp <6646>
+Thread      : spliced 7fef8dcdd700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490845088.816934008
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:08 EDT 2017
+Description : Durability Client for spliced started
+Node        : UbuntuPS
+Process     : recorder-node-cpp <6646>
+Thread      : spliced 7fef8dcdd700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490845088.818213722
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:08 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : UbuntuPS
+Process     : recorder-node-cpp <6646>
+Thread      : spliced 7fef8dcdd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490845088.818273714
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:08 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : UbuntuPS
+Process     : recorder-node-cpp <6646>
+Thread      : ddsi2 7fef853df700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490845088.831558766
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:09 EDT 2017
+Description : The durability service can be identified by ID: 1855435678
+Node        : UbuntuPS
+Process     : recorder-node-cpp <6646>
+Thread      : durability 7fef85d9c700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490845089.139041435
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:16 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : UbuntuPS
+Process     : recorder-node-cpp <6646>
+Thread      : durability 7fef85d9c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490845096.549728830
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:51 EDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1964577268 from [1,2147483647]
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : spliced 7f7a5399a700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490845131.291985972
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:51 EDT 2017
+Description : Service cmsoap disabled
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : spliced 7f7a5399a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490845131.292732092
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:51 EDT 2017
+Description : Durability Client for spliced started
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : spliced 7f7a5399a700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490845131.294202773
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:51 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : spliced 7f7a5399a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490845131.294300939
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:51 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490845131.318206233
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 28a11f05:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365600768
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 1d94d205:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365662801
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 67d1fa2b:b4:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365674020
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 5a07073d:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365679150
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 710a0b51:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365691421
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 184a475c:8e:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365696364
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 3d38e06b:8e:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365700875
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 47994187:b4:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365705413
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 7b81b397:8e:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365709769
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 5a01959a:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365715155
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 2a21a6ac:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365719650
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 666a15b9:93:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365724135
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 5e2001cd:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365728529
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader bb8ffe2:8e:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365735477
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 53ec59e6:b4:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365740190
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 436c1bf6:92:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365744742
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 1a5e91f8:b4:1:2c7 non-responsive
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490845132.365749611
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 1a5e91f8:b4:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.367774759
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 5a01959a:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.368097106
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 666a15b9:93:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.368745802
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 7b81b397:8e:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.369886020
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader bb8ffe2:8e:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.371039476
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 67d1fa2b:b4:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.371716398
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 5e2001cd:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.372587453
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 47994187:b4:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.373088325
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 1d94d205:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.373744661
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 28a11f05:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.374182113
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 710a0b51:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.375669220
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 3d38e06b:8e:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.376702945
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 5a07073d:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.378175695
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 184a475c:8e:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.380669183
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 436c1bf6:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.381440152
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 2a21a6ac:92:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.407667370
+========================================================================================
+Report      : WARNING
+Date        : Wed Mar 29 23:38:52 EDT 2017
+Description : writer 751911f4:b4:1:2c2 considering reader 53ec59e6:b4:1:2c7 responsive again
+
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : recv 7f7a4b947700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490845132.410589006
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:38:53 EDT 2017
+Description : The durability service can be identified by ID: 1964577268
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : durability 7f7a4ba59700
+Internals   : 6.6.2p1/af3a357/aec814d/DurabilityService/d_durability.c/676/0/1490845133.012176408
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:39:00 EDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : durability 7f7a4ba59700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490845140.417597017
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:39:02 EDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : ddsi2 7f7a4b09c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490845142.822733277
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:39:04 EDT 2017
+Description : ================================================
+              == The service 'durability' has now terminated. 
+              ================================================
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : durability 7f7a4ba59700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490845144.011923914
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:39:04 EDT 2017
+Description : Durability Client for spliced stopped
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : spliced 7f7a5399a700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490845144.077376240
+========================================================================================
+Report      : INFO
+Date        : Wed Mar 29 23:39:04 EDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : UbuntuPS
+Process     : recorder-node-cpp <7518>
+Thread      : spliced 7f7a5399a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490845144.077539023
