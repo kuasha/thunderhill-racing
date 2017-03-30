@@ -53,6 +53,9 @@ using namespace std;
 #ifndef NODE_FLAGS_VALUE
 #define NODE_FLAGS_VALUE (0)
 #endif
+#ifndef ENABLE_CONTROLS_COMMAND_ID
+#define ENABLE_CONTROLS_COMMAND_ID (5001)
+#endif
 
 /**
  * @brief PublisherSubscriberNode class
@@ -73,16 +76,17 @@ private:
     ps_msg_type _steeringReport;
     ps_msg_type _throttleReport;
 
-    int steeringID = 0;
-    int brakeID = 0;
-    int throttleID = 0;
+    unsigned long long steeringID = 0;
+    unsigned long long brakeID = 0;
+    unsigned long long throttleID = 0;
+    int initialised = 0;
 
-    float angle1 = -9.126328; 
-    float angle2 = 7.84351;
-    float throttle_val = 0.3;
+    float angle1 = -6.; 
+    float angle2 = 6.;
+    float throttle_val = 0.1;
     float break_val = 0.7;
 
-    int sleeping_interval = 1000000;
+    int sleeping_interval = 10000;
     
 public:
     
@@ -146,19 +150,28 @@ public:
      */
     void okStateEvent() override
     {   
-        pause();
+	//cout << brakeID << "  " << initialised << endl;
+	fflush(stdout);
+	if(initialised == 0 && brakeID != 0) {
+	printf("In here\n");
+	fflush(stdout);
+	    polysync::datamodel::CommandMessage cmdMsg( *this);
+	    cmdMsg.setId(ENABLE_CONTROLS_COMMAND_ID);
+	    cmdMsg.setDestGuid(brakeID);
+            cmdMsg.setHeaderTimestamp( polysync::getTimestamp() );
+            cmdMsg.setTimestamp( polysync::getTimestamp() );
+	    cmdMsg.publish();
+	    initialised = 1;
+	}
+	if(initialised != 0) {
 
-        steerCommand(angle1);
-        pause();
+            steerCommand(angle1);
 
-        steerCommand(angle2);
-        pause();
+            throttleCommand(throttle_val);
 
-        throttleCommand(throttle_val);
-        pause();
-
-        brakeCommand(break_val);
-        pause();
+            brakeCommand(break_val);
+	    pause();
+	}
     }
 
     void pause()
@@ -171,13 +184,15 @@ public:
         if (steeringID)
         {
             polysync::datamodel::PlatformSteeringCommandMessage message( *this);
-            message.setHeaderSrcGuid(steeringID);
+            message.setDestGuid(steeringID);
             message.setTimestamp( polysync::getTimestamp() );
             message.setSteeringWheelAngle(angle);
+            message.setMaxSteeringWheelRotationRate(M_PI_2);
             message.setHeaderTimestamp( polysync::getTimestamp() );
-            message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
+	    message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
+	    message.setEnabled(1);
             message.publish();
-            message.print();
+            //message.print();
         }
         
     }
@@ -187,13 +202,14 @@ public:
         if (brakeID != 0) 
         {
             polysync::datamodel::PlatformBrakeCommandMessage message( *this);
-            message.setHeaderSrcGuid(brakeID);
+            message.setDestGuid(brakeID);
             message.setTimestamp( polysync::getTimestamp() );
             message.setBrakeCommand(value);
             message.setHeaderTimestamp( polysync::getTimestamp() );
-            message.setBrakeCommandType(BRAKE_COMMAND_PEDAL);
+	    message.setBrakeCommandType(BRAKE_COMMAND_PEDAL);
+	    message.setEnabled(1);
             message.publish();
-            message.print();
+            //message.print();
         }
         
     }
@@ -203,13 +219,14 @@ public:
         if (throttleID != 0)
         {
             polysync::datamodel::PlatformThrottleCommandMessage message( *this);
-            message.setHeaderSrcGuid(throttleID);
+            message.setDestGuid(throttleID);
             message.setTimestamp( polysync::getTimestamp() );
             message.setThrottleCommand(value);
             message.setHeaderTimestamp( polysync::getTimestamp() );
-            message.setThrottleCommandType(THROTTLE_COMMAND_PEDAL);
+	    message.setThrottleCommandType(THROTTLE_COMMAND_PEDAL);
+	    message.setEnabled(1);
             message.publish();
-            message.print();
+            //message.print();
         }
         
     }
@@ -225,12 +242,12 @@ public:
     void messageEvent( std::shared_ptr< polysync::Message > message ) override
     {
         using namespace polysync::datamodel;
-
         if (std::shared_ptr < PlatformSteeringReportMessage > incomingMessage = getSubclass < PlatformSteeringReportMessage > (message))
         {
             if (steeringID == 0)
             {
                 steeringID = incomingMessage->getHeaderSrcGuid();
+		incomingMessage->print();
             }
         }
 
@@ -239,6 +256,7 @@ public:
             if (brakeID == 0)
             {
                 brakeID = incomingMessage->getHeaderSrcGuid();
+		incomingMessage->print();
             }
         }
 
@@ -247,6 +265,7 @@ public:
             if (throttleID == 0)
             {
                 throttleID = incomingMessage->getHeaderSrcGuid();
+		incomingMessage->print();
             }
         }
     }

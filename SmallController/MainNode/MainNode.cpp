@@ -41,6 +41,10 @@
 #define NODE_FLAGS_VALUE (0)
 #endif
 
+#ifndef ENABLE_CONTROLS_COMMAND_ID
+#define ENABLE_CONTROLS_COMMAND_ID (5001)
+#endif
+
 using namespace std;
 
 typedef void (*imageCallback)(int, unsigned char *, float, float, float);
@@ -57,11 +61,14 @@ private:
 
     std::vector <unsigned char> imageData;
     unsigned int imageSize;
-    int maxGen = 3;
+
+    int maxGen = 1;
     int gen = 0;
-    int steeringID = 0;
-    int brakeID = 0;
-    int throttleID = 0;
+    int commandMessageInitialized = 0;
+
+    unsigned long long steeringID = 0;
+    unsigned long long brakeID = 0;
+    unsigned long long throttleID = 0;
 
     double velocity = 0;
     double latitude = 0;
@@ -96,6 +103,20 @@ public:
         registerListener( _throttleReport );
         _platformMotion = getMessageTypeByName( "ps_platform_motion_msg");
         registerListener( _platformMotion );
+    }
+
+    void okStateEvent() override
+    {
+        if (commandMessageInitialized == 0 && brakeID != 0)
+        {
+            polysync::datamodel::CommandMessage cmdMsg( *this);
+            cmdMsg.setId(ENABLE_CONTROLS_COMMAND_ID);
+            cmdMsg.setDestGuid(brakeID);
+            cmdMsg.setHeaderTimestamp( polysync::getTimestamp() );
+            cmdMsg.setTimestamp( polysync::getTimestamp() );
+            cmdMsg.publish();
+            commandMessageInitialized = 1;
+        }
     }
 
     virtual void messageEvent( std::shared_ptr< polysync::Message > message )
@@ -173,38 +194,49 @@ public:
 
     void steerCommand(float angle)
     {
-        polysync::datamodel::PlatformSteeringCommandMessage message( *this);
-        message.setHeaderSrcGuid(steeringID);
-        message.setTimestamp( polysync::getTimestamp() );
-        message.setSteeringWheelAngle(angle);
-        message.setHeaderTimestamp( polysync::getTimestamp() );
-        message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
-        message.publish();
-        message.print();
+        if (commandMessageInitialized != 0 && steeringID != 0) 
+        {
+            polysync::datamodel::PlatformSteeringCommandMessage message( *this);
+            message.setDestGuid(steeringID);
+            message.setTimestamp( polysync::getTimestamp() );
+            message.setSteeringWheelAngle(angle);
+            message.setMaxSteeringWheelRotationRate(M_PI_2);
+            message.setHeaderTimestamp( polysync::getTimestamp() );
+            message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
+            message.setEnabled(1);
+            message.publish();
+            message.print();
+        }
     }
 
     void brakeCommand(float value)
     {
-        polysync::datamodel::PlatformBrakeCommandMessage message( *this);
-        message.setHeaderSrcGuid(brakeID);
-        message.setTimestamp( polysync::getTimestamp() );
-        message.setBrakeCommand(value);
-        message.setHeaderTimestamp( polysync::getTimestamp() );
-        message.setBrakeCommandType(BRAKE_COMMAND_PEDAL);
-        message.publish();
-        message.print();
+        if (commandMessageInitialized != 0 && brakeID != 0) 
+        {
+            polysync::datamodel::PlatformBrakeCommandMessage message( *this);
+            message.setDestGuid(brakeID);
+            message.setTimestamp( polysync::getTimestamp() );
+            message.setBrakeCommand(value);
+            message.setHeaderTimestamp( polysync::getTimestamp() );
+            message.setBrakeCommandType(BRAKE_COMMAND_PEDAL);
+            message.publish();
+            message.print();
+        }
     }
 
     void throttleCommand(float value)
     {
-        polysync::datamodel::PlatformThrottleCommandMessage message( *this);
-        message.setHeaderSrcGuid(throttleID);
-        message.setTimestamp( polysync::getTimestamp() );
-        message.setThrottleCommand(value);
-        message.setHeaderTimestamp( polysync::getTimestamp() );
-        message.setThrottleCommandType(THROTTLE_COMMAND_PEDAL);
-        message.publish();
-        message.print();
+        if (commandMessageInitialized != 0 && brakeID != 0)
+        {
+            polysync::datamodel::PlatformThrottleCommandMessage message( *this);
+            message.setDestGuid(throttleID);
+            message.setTimestamp( polysync::getTimestamp() );
+            message.setThrottleCommand(value);
+            message.setHeaderTimestamp( polysync::getTimestamp() );
+            message.setThrottleCommandType(THROTTLE_COMMAND_PEDAL);
+            message.publish();
+            message.print();
+        }
     }
 
 };
