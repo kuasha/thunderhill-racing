@@ -64,9 +64,11 @@ using namespace std;
  * well as responding to error and warning type events.
  * 
  */
-class PublisherSubscriberNode : public polysync::Node
+class TestNode : public polysync::Node
 {
 private:
+    const string node_name = "test-node-cpp";
+
     ps_msg_type _brakeReport;
     ps_msg_type _steeringReport;
     ps_msg_type _throttleReport;
@@ -74,10 +76,17 @@ private:
     int steeringID = 0;
     int brakeID = 0;
     int throttleID = 0;
+
+    float angle1 = -9.126328; 
+    float angle2 = 7.84351;
+    float throttle_val = 0.3;
+    float break_val = 0.7;
+
+    int sleeping_interval = 1000000;
     
 public:
     
-    PublisherSubscriberNode()
+    TestNode()
     {
         setNodeType( PSYNC_NODE_TYPE_API_USER );
         setDomainID( PSYNC_DEFAULT_DOMAIN );
@@ -86,7 +95,7 @@ public:
         setNodeName( node_name );
     }
     
-    ~PublisherSubscriberNode()
+    ~TestNode()
     {
         
     }
@@ -136,20 +145,25 @@ public:
      * @return void
      */
     void okStateEvent() override
+    {   
+        pause();
+
+        steerCommand(angle1);
+        pause();
+
+        steerCommand(angle2);
+        pause();
+
+        throttleCommand(throttle_val);
+        pause();
+
+        brakeCommand(break_val);
+        pause();
+    }
+
+    void pause()
     {
-        // Create a message
-        polysync::datamodel::EventMessage message( *this );
-        
-        // Set message data
-        message.setHeaderTimestamp( polysync::getTimestamp() );
-        message.setId(0);
-
-        // Publish to the PolySync bus
-        message.publish();
-
-        // The ok state is called periodically by the system so sleep to reduce
-        // the number of messages sent.
-        polysync::sleepMicro( 1000000 );
+        polysync::sleepMicro( sleeping_interval );
     }
 
     void steerCommand(float angle)
