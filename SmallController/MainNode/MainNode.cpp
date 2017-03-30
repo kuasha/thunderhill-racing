@@ -178,6 +178,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setSteeringWheelAngle(angle);
         message.setHeaderTimestamp( polysync::getTimestamp() );
+        message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
         message.publish();
         message.print();
     }
@@ -189,6 +190,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setBrakeCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
+        message.setBrakeCommandType(BRAKE_COMMAND_PEDAL);
         message.publish();
         message.print();
     }
@@ -200,6 +202,7 @@ public:
         message.setTimestamp( polysync::getTimestamp() );
         message.setThrottleCommand(value);
         message.setHeaderTimestamp( polysync::getTimestamp() );
+        message.setThrottleCommandType(THROTTLE_COMMAND_PEDAL);
         message.publish();
         message.print();
     }

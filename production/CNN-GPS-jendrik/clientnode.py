@@ -87,9 +87,15 @@ def make_prediction():
 					image = Image.open(BytesIO(jpeg_image))
 					image_array = np.asarray(image)
 					image_array = cv2.resize(image_array, (320, 160))
-					steering_angle, throttle, brake_value = model.predict([preprocessImage(image_array)[None,:,:,:], norm_xVec[None,:]])
+					steering_angle, move_value = model.predict([preprocessImage(image_array)[None,:,:,:], norm_xVec[None,:]])
+					print(steering_angle, move_value)
 					if res_queue.full(): # maintain a single most recent prediction in the queue
 						res_queue.get(False)
+					throttle, brake_value = 0, 0
+					if (move_value > 0):
+						throttle = abs(move_value)
+					else:
+						brake_value = move_value
 					res_queue.put((steering_angle, throttle, brake_value))
 
 
