@@ -218,6 +218,7 @@ public:
             message.setBrakeCommand(value);
             message.setHeaderTimestamp( polysync::getTimestamp() );
             message.setBrakeCommandType(BRAKE_COMMAND_PEDAL);
+            message.setEnabled(1);
             message.publish();
             //message.print();
         }
@@ -233,6 +234,7 @@ public:
             message.setThrottleCommand(value);
             message.setHeaderTimestamp( polysync::getTimestamp() );
             message.setThrottleCommandType(THROTTLE_COMMAND_PEDAL);
+            message.setEnabled(1);
             message.publish();
             //message.print();
         }
