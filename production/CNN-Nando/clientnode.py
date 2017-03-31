@@ -82,11 +82,7 @@ def make_prediction():
 					if brake > 0.5:
 						throttle = -brake
 
-					if float(speed) > 18:
-						throttle = 0
-
-
-					print('prediction: ',steering_angle, throttle, brake)
+					# print('prediction: ',steering_angle, throttle, brake, speed)
 
 					if res_queue.full(): # maintain a single most recent prediction in the queue
 						res_queue.get(False)
