@@ -4,12 +4,7 @@ import array
 from PIL import Image
 from io import BytesIO
 import numpy as np
-from keras.models import load_model
-import h5py
-from keras import __version__ as keras_version
 import tensorflow as tf
-from keras import backend as K
-from Preprocess import *
 import cv2
 import time
 from data_buffer import DataBuffer
@@ -59,6 +54,7 @@ def make_prediction():
 						print("this is debug mode, switch it to False")
 					else:
 						img = np.array(Image.frombytes('RGB', [960, 480], jpeg_image, 'raw'))
+						img = cv2.resize(img, (320, 160))
 						transformed_image_array = img[:, :, :]
 						transformed_image_array = (transformed_image_array.astype(np.float32))
 					steering_angle, throttle, brake = model.predict(transformed_image_array)
