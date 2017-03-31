@@ -17,7 +17,7 @@ import queue
 import threading
 
 
-f = h5py.File("multiModel.h5", mode='r')
+f = h5py.File("psyncModel.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -28,15 +28,17 @@ if model_version != keras_version:
 def customLoss(y_true, y_pred):
 	return K.mean(K.square(y_pred - y_true), axis=-1)
 
-model = load_model("multiModel.h5", custom_objects={'customLoss':customLoss})
+model = load_model("psyncModel.h5", custom_objects={'customLoss':customLoss})
 graph = tf.get_default_graph()
 
 data_buffer = DataBuffer()
 res_queue = queue.Queue(maxsize=1)
 
 idxs = [0, 1, 2]
-means = [-122.33790211, 39.53881540, 62.68238949]
-stds = [0.00099555, 0.00180817, 13.48539298]
+means = [-2.135234308696, 0.690051203865, 62.68238949]
+stds = [0.000022089013, 0.000045442627, 13.48539298]
+
+debug = False
 
 
 def normalize_vector(xVec):
@@ -57,18 +59,11 @@ def copyImage(byte_array, imageSize):
 
 
 def imageReceived(imageSize, rawImage, speed, lat, lon):
-	print("in image received")
-	print(speed, lat, lon)
+	print("image received with: ", speed, lat, lon)
 	jpegImage = copyImage(rawImage, imageSize)
 	data_buffer.add_item((jpegImage, speed, lat, lon))
-	try:
-		prediction = res_queue.get(block=False)
-		Node.steerCommand(c_float(prediction[0]))
-		Node.throttleCommand(c_float(prediction[1]))
-		Node.brakeCommand(c_float(prediction[2]))
-	except queue.Empty:
-		pass
-
+	
+Node = MainNode(imageReceived)
 
 def make_prediction():
 	global graph
@@ -84,25 +79,50 @@ def make_prediction():
 				xVec = np.array([lon, lat, speed])
 				norm_xVec = normalize_vector(xVec)
 				if jpeg_image:
-					image = Image.open(BytesIO(jpeg_image))
-					image_array = np.asarray(image)
-					image_array = cv2.resize(image_array, (320, 160))
-					steering_angle, move_value = model.predict([preprocessImage(image_array)[None,:,:,:], norm_xVec[None,:]])
-					print(steering_angle, move_value)
+					if debug:
+						image = Image.open(BytesIO(jpeg_image))
+						image_array = np.asarray(image)
+						img = cv2.resize(image_array, (320, 160))
+					else:
+						img = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
+						image_array = cv2.resize(img[::-1], (320, 160))
+					steering_angle, move_value = model.predict([preprocessImage(img)[None,:,:,:], norm_xVec[None,:]])
 					if res_queue.full(): # maintain a single most recent prediction in the queue
 						res_queue.get(False)
 					throttle, brake_value = 0, 0
-					if (move_value > 0):
-						throttle = abs(move_value)
+					if (move_value[0][0] > 0):
+						throttle = move_value[0][0]
 					else:
-						brake_value = move_value
-					res_queue.put((steering_angle, throttle, brake_value))
+						brake_value = abs(move_value[0][0])
+					print("putting in the queue: ", steering_angle[0][0], throttle, brake_value)
+					res_queue.put((steering_angle[0][0], throttle, brake_value))
 
+
+def sendValues():
+	steer = 0
+	throttle = 0
+	brake = 0
+	while 1:
+		try:
+			prediction = res_queue.get(block=False)
+			steer = c_float(prediction[0])
+			throttle = c_float(prediction[1])
+			brake = c_float(prediction[2])
+			print("got values: ", steer, throttle, brake)
+		except queue.Empty:
+			pass
+		Node.steerCommand(steer)
+		Node.throttleCommand(throttle)
+		Node.brakeCommand(brake)
+		time.sleep(0.01)
 
 thread = threading.Thread(target=make_prediction, args=())
 thread.daemon = True
 thread.start()
+thread2 = threading.Thread(target=sendValues, args=())
+thread2.daemon = True
+thread2.start()
 
 
-Node = MainNode(imageReceived)
+
 Node.connectPolySync()
