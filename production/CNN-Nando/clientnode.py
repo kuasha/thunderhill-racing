@@ -82,7 +82,7 @@ def make_prediction():
 					if brake > 0.5:
 						throttle = -brake
 
-					if float(speed) > 42:
+					if float(speed) > 18:
 						throttle = 0
 
 
