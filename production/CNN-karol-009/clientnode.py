@@ -9,24 +9,24 @@ import h5py
 from keras import __version__ as keras_version
 import tensorflow as tf
 from keras import backend as K
-from Preprocess import *
+# from Preprocess import *
 import cv2
 import time
 from data_buffer import DataBuffer
 import queue
 import threading
-import argparse
-import base64
+# import argparse
+# import base64
 import json
 
 import numpy as np
-import socketio
-import eventlet
-import eventlet.wsgi
-import time
+# import socketio
+# import eventlet
+# import eventlet.wsgi
+# import time
 from PIL import Image
 from PIL import ImageOps
-from flask import Flask, render_template
+# from flask import Flask, render_template
 from io import BytesIO
 
 from keras.models import model_from_json
@@ -35,7 +35,7 @@ from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_a
 # Fix error with Keras and TensorFlow
 import tensorflow as tf
 import cv2
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 
@@ -44,7 +44,6 @@ from transformations import *
 
 import time
 import utm
-from geopy.distance import vincenty
 
 ll = (-122.34306, 39.53284)   # 37M 559275mE 9848303mN
 ur = (-122.33776, 39.54123)   # 37M 560209mE 9848312mN
@@ -369,7 +368,7 @@ with open('model.json', 'r') as jfile:
     model = model_from_json(jfile.read())
 
 model.compile("adam", "mse")
-weights_file = 'weights.0011-16.389.hdf5'
+weights_file = 'weights.0209-0.046.hdf5'
 model.load_weights(weights_file)
 
 # model = load_model("multiModel.h5", custom_objects={'customLoss':customLoss})
@@ -435,8 +434,8 @@ def make_prediction():
                     image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
                     image_array = Preproc(image_array)
                     # print(image_array.shape)
-                    cv2.imshow('img',image_array+0.5)
-                    cv2.waitKey(1)
+                    # cv2.imshow('img',image_array+0.5)
+                    # cv2.waitKey(1)
 
                     speed_cl=np.array(speedToClass(speed))
 
@@ -450,7 +449,8 @@ def make_prediction():
                     image_array=image_array.reshape(1,image_array.shape[0],image_array.shape[1],image_array.shape[2])
                     speed_cl=speed_cl.reshape(1,speed_cl.shape[0])
 
-                    res=model.predict([image_array,speed_cl,np.array([CTE, LapDistance]).reshape(1,2    )], batch_size=1)
+                    res=model.predict([image_array,speed_cl,np.array([LapDistance]).reshape(1,1)], batch_size=1)
+                    # res=model.predict([image_array,speed_cl,np.array([CTE, LapDistance]).reshape(1,2    )], batch_size=1)
                     steering_angle,throttle,brake = res[0]
 
                     if brake>0.7:

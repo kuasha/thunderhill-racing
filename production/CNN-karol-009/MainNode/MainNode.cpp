@@ -204,7 +204,7 @@ public:
             message.setSteeringCommandKind(STEERING_COMMAND_ANGLE);
             message.setEnabled(1);
             message.publish();
-            message.print();
+            // message.print();
         }
     }
 
@@ -220,7 +220,7 @@ public:
             message.setBrakeCommandType(BRAKE_COMMAND_PEDAL);
             message.setEnabled(1);
             message.publish();
-            message.print();
+            // message.print();
         }
     }
 
@@ -236,7 +236,7 @@ public:
             message.setThrottleCommandType(THROTTLE_COMMAND_PEDAL);
             message.setEnabled(1);
             message.publish();
-            message.print();
+            // message.print();
         }
     }
 
