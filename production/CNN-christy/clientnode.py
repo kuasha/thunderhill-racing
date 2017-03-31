@@ -118,14 +118,14 @@ def make_prediction():
                 # print(jpeg_image)
                 if jpeg_image:
                     img = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
-                    image_array = cv2.resize(img, (320, 160))
+                    image_array = cv2.resize(img, (320, 160))[::-1,:,:]
                     image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
 
                     cv2.imshow('img',image_array)
                     cv2.waitKey(1)
 
                     output = model.predict(image_array[None, :, :, :], batch_size=1)
-                    steering_angle = output[0][0]
+                    steering_angle = output[0][0]*-2
                     throttle = output[0][1]
 
                     min_speed = 8 * 0.44704
