@@ -72,7 +72,7 @@ public:
         registerListener(_imageType);
 
         //write first line to file
-        outputFile << "steeringErr, brakeErr, throttleErr\n";
+        outputFile << "steeringErr,brakeErr,throttleErr\n";
 
         //TODO: - reference line, to remove
         // outputFile << "path,heading,longitude,latitude,quarternion0,quarternion1,quarternion2"
@@ -86,7 +86,6 @@ public:
 		//add command values to command buffers
 		if (std::shared_ptr<PlatformBrakeCommandMessage> incomingMessage =
 				getSubclass<PlatformBrakeCommandMessage>(message)) {
-			std::cout << "brake command" << std::endl;
 			gotBrake = true;
 			currentBrakeCommandValue = incomingMessage->getBrakeCommand();
 		}
@@ -106,7 +105,6 @@ public:
 		//add report values to report buffers
 		if (std::shared_ptr<PlatformBrakeReportMessage> incomingMessage =
 				getSubclass<PlatformBrakeReportMessage>(message)) {
-			std::cout << "brake report" << std::endl;
 			currentBrakeReportValue = incomingMessage->getPedalInput();
 		}
 
