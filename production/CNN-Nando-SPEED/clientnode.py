@@ -9,7 +9,6 @@ import h5py
 from keras import __version__ as keras_version
 import tensorflow as tf
 from keras import backend as K
-from PreprocessPsync import *
 import cv2
 import time
 from data_buffer import DataBuffer
@@ -18,7 +17,7 @@ import threading
 import ctypes
 
 
-f = h5py.File("psyncModelBase.h5", mode='r')
+f = h5py.File("model.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -26,25 +25,13 @@ if model_version != keras_version:
 	print('You are using Keras version ', keras_version, ', but the model was built using ', model_version)
 
 
-def customLoss(y_true, y_pred):
-	return K.mean(K.square(y_pred - y_true), axis=-1)
-
-model = load_model("psyncModelBase.h5", custom_objects={'customLoss':customLoss})
+model = load_model("model.h5")
 graph = tf.get_default_graph()
 
 data_buffer = DataBuffer()
 res_queue = queue.Queue(maxsize=1)
 
 MAX = 33.706074
-
-debug = False
-
-
-def normalize_vector(xVec):
-	for i, mean, std in zip(idxs, means, stds):
-		xVec[i] -= mean
-		xVec[i] /= std
-	return xVec
 
 
 def copyImage(byte_array, imageSize):
@@ -67,10 +54,6 @@ def make_prediction():
 			if item and len(item) == 4:
 				jpeg_image = item[0]
 				speed = item[1]
-				lat = item[2]
-				lon = item[3]
-				xVec = np.array([lon, lat, speed])
-				norm_xVec = normalize_vector(xVec)
 				image = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
 				image_array = np.asarray(image)
 				image_array = cv2.resize(image_array, (160, 80))
@@ -85,7 +68,8 @@ def make_prediction():
 					brake = 0.
 				if speed > 23.0:
 					throttle = 0.
-				res_queue.put((steering_angle[0][0], throttle, brake))
+				print("puts in the queue: ", steering_angle, throttle, brake)
+				res_queue.put((steering_angle, throttle, brake))
 
 
 def sendValues():
