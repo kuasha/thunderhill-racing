@@ -26,10 +26,9 @@ from PIL import ImageOps
 from keras.models import model_from_json
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array
 
-import cv2
 
 
-f = h5py.File("thunderhill.h5", mode='r')
+f = h5py.File("thunderhill_slow.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -77,9 +76,8 @@ def make_prediction():
                 lon = item[3]
                 
                 img = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))[::-1,:,:]
-                image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
 
-                output = model.predict(image_array[None, :, :, :], batch_size=1)
+                output = model.predict([img[None, :, :, :], np.array([speed])[None,:]])
                 steering_angle = output[0][0]
                 throttle = output[0][1]
 
