@@ -9,6 +9,7 @@ import h5py
 from keras import __version__ as keras_version
 import tensorflow as tf
 from keras import backend as K
+from Preprocess import *
 import cv2
 import time
 from data_buffer import DataBuffer
@@ -16,7 +17,7 @@ import queue
 import threading
 
 
-f = h5py.File("model.h5", mode='r')
+f = h5py.File("psyncModel.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -27,11 +28,25 @@ if model_version != keras_version:
 def customLoss(y_true, y_pred):
 	return K.mean(K.square(y_pred - y_true), axis=-1)
 
-model = load_model("model.h5", custom_objects={'customLoss':customLoss})
+model = load_model("psyncModel.h5", custom_objects={'customLoss':customLoss})
 graph = tf.get_default_graph()
 
 data_buffer = DataBuffer()
 res_queue = queue.Queue(maxsize=1)
+
+idxs = [0, 1, 2]
+means = [-2.135234308696, 0.690051203865, 62.68238949]
+stds = [0.000022089013, 0.000045442627, 13.48539298]
+
+debug = False
+
+
+def normalize_vector(xVec):
+	for i, mean, std in zip(idxs, means, stds):
+		xVec[i] -= mean
+		xVec[i] /= std
+	return xVec
+
 
 def copyImage(byte_array, imageSize):
 	if imageSize > 8:
@@ -44,18 +59,11 @@ def copyImage(byte_array, imageSize):
 
 
 def imageReceived(imageSize, rawImage, speed, lat, lon):
-	print("in image received")
-	print(speed, lat, lon)
+	print("image received with: ", speed, lat, lon)
 	jpegImage = copyImage(rawImage, imageSize)
 	data_buffer.add_item((jpegImage, speed, lat, lon))
-	try:
-		prediction = res_queue.get(block=False)
-		Node.steerCommand(c_float(prediction[0]))
-		Node.throttleCommand(c_float(prediction[1]))
-		Node.brakeCommand(c_float(prediction[2]))
-	except queue.Empty:
-		pass
-
+	
+Node = MainNode(imageReceived)
 
 def make_prediction():
 	global graph
@@ -89,10 +97,30 @@ def make_prediction():
 					res_queue.put((steering_angle, throttle, brake))
 
 
+def sendValues():
+	steer = 0
+	throttle = 0
+	brake = 0
+	while 1:
+		try:
+			prediction = res_queue.get(block=False)
+			steer = c_float(prediction[0])
+			throttle = c_float(prediction[1])
+			brake = c_float(prediction[2])
+			print("got values: ", steer, throttle, brake)
+		except queue.Empty:
+			pass
+		Node.steerCommand(steer)
+		Node.throttleCommand(throttle)
+		Node.brakeCommand(brake)
+		time.sleep(0.01)
+
 thread = threading.Thread(target=make_prediction, args=())
 thread.daemon = True
 thread.start()
+thread2 = threading.Thread(target=sendValues, args=())
+thread2.daemon = True
+thread2.start()
 
 
-Node = MainNode(imageReceived)
 Node.connectPolySync()
