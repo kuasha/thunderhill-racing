@@ -19,22 +19,22 @@ import base64
 import json
 
 import numpy as np
-import socketio
-import eventlet
-import eventlet.wsgi
+#import socketio
+#import eventlet
+#import eventlet.wsgi
 import time
 from PIL import Image
 from PIL import ImageOps
-from flask import Flask, render_template
-from io import BytesIO
+#from flask import Flask, render_template
+#from io import BytesIO
 
 from keras.models import model_from_json
 from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array
 
 # Fix error with Keras and TensorFlow
-import tensorflow as tf
+#import tensorflow as tf
 import cv2
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 
