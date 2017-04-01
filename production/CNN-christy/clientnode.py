@@ -100,6 +100,8 @@ def imageReceived(imageSize, rawImage, speed, lat, lon):
     except queue.Empty:
         pass
 
+Node = MainNode(imageReceived)
+
 def make_prediction():
     global graph
     # print('make prediction')
@@ -120,9 +122,6 @@ def make_prediction():
                     img = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
                     image_array = cv2.resize(img, (320, 160))[::-1,:,:]
                     image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
-
-                    cv2.imshow('img',image_array)
-                    cv2.waitKey(1)
 
                     output = model.predict(image_array[None, :, :, :], batch_size=1)
                     steering_angle = output[0][0]*-2
@@ -152,11 +151,30 @@ def make_prediction():
                 end = time.time()
                 print('\n%.3f ms\n'%(end - start))
 
+def sendValues():
+    steer = 0
+    throttle = 0
+    brake = 0
+    while 1:
+        try:
+            prediction = res_queue.get(block=False)
+            steer = c_float(prediction[0])
+            throttle = c_float(prediction[1])
+            brake = c_float(prediction[2])
+            print("got values: ", steer, throttle, brake)
+        except queue.Empty:
+            pass
+        Node.steerCommand(steer)
+        Node.throttleCommand(throttle)
+        Node.brakeCommand(brake)
+        time.sleep(0.01)
 
 thread = threading.Thread(target=make_prediction, args=())
 thread.daemon = True
 thread.start()
+thread2 = threading.Thread(target=sendValues, args=())
+thread2.daemon = True
+thread2.start()
 
 
-Node = MainNode(imageReceived)
 Node.connectPolySync()
