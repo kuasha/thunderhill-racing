@@ -36,7 +36,7 @@ keras_version = str(keras_version).encode('utf8')
 if model_version != keras_version:
 	print('You are using Keras version ', keras_version, ', but the model was built using ', model_version)
 
-model = load_model("thunderhill.h5")
+model = load_model("thunderhill_slow.h5")
 
 graph = tf.get_default_graph()
 
@@ -76,21 +76,20 @@ def make_prediction():
                 lat = item[2]
                 lon = item[3]
                 
-                img = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
-                image_array = cv2.resize(img, (320, 160))[::-1,:,:]
+                img = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))[::-1,:,:]
                 image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
 
                 output = model.predict(image_array[None, :, :, :], batch_size=1)
-                steering_angle = output[0][0]*-2
+                steering_angle = output[0][0]
                 throttle = output[0][1]
 
-                min_speed = 8 * 0.44704
-                max_speed = 50 * 0.44704
+                min_speed = 8
+                max_speed = 30
 
-                if float(speed) > 25 * 0.44704:
+                if float(speed) > max_speed:
                     throttle = 0
 
-                if steering_angle > 0.2 or steering_angle < -0.2:
+                if steering_angle > 0.2*6.28 or steering_angle < -0.2*6.28:
                     throttle = -throttle
 
 
@@ -99,7 +98,7 @@ def make_prediction():
                     throttle=0
                     brake=np.abs(throttle)
 
-                print('prediction:',steering_angle,throttle,brake, 'speed: ',speed/0.44704)
+                print('prediction:',steering_angle,throttle,brake, 'speed: ',speed)
 
                 if res_queue.full(): # maintain a single most recent prediction in the queue
                     res_queue.get(False)
