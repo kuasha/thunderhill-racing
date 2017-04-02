@@ -88,10 +88,10 @@ def make_prediction():
 
                 image_array=image_array.reshape(1,image_array.shape[0],image_array.shape[1],image_array.shape[2])
 
-                res=model.predict([image_array,np.array([spd])], batch_size=1)
+                res=model.predict([image_array], batch_size=1)
                 if res_queue.full(): # maintain a single most recent prediction in the queue
                     res_queue.get(False)
-                steering_angle, _ = res[0]
+                steering_angle = res[0]
 
                 print('speed: %8.3f'%speed,'predictions: %12s'%(str(steering_angle)))
 

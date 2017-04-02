@@ -229,3 +229,20 @@ Node        : karol-hyper
 Process     : python3.5 <23286>
 Thread      : spliced 7f15a7920700
 Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491119171.327766242
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 10:51:46 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <28703>
+Thread      : spliced 7f9f625f3700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491123106.605847826
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 10:51:46 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <28703>
+Thread      : spliced 7f9f625f3700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491123106.605866451

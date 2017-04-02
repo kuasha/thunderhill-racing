@@ -52,22 +52,22 @@ class Preprocess(Transform):
         return np.array([self.apply(x) for x in X_train])
 
 
-class Rotate(Transform):
-    def __init__(self, angle=None):
-        self.angle = angle
-
-    def apply(self, img):
-        rows, cols, depth = img.shape
-        M = cv2.getRotationMatrix2D((cols/2,rows/2), self.getAngle(), 1)
-        return cv2.warpAffine(img, M, (cols, rows))
-
-    def getAngle(self):
-        if self.angle is None:
-            return np.random.randint(-15, 15)
-        return self.angle
-
-    def toString(self):
-        return '{} by {}'.format('Rotate', self.angle)
+# class Rotate(Transform):
+#     def __init__(self, angle):
+#         self.angle = angle
+#
+#     def apply(self, img):
+#         rows, cols, depth = img.shape
+#         M = cv2.getRotationMatrix2D((cols/2,rows/2), self.getAngle(), 1)
+#         return cv2.warpAffine(img, M, (cols, rows))
+#
+#     def getAngle(self):
+#         if self.angle is None:
+#             return np.random.randint(-15, 15)
+#         return self.angle
+#
+#     def toString(self):
+#         return '{} by {}'.format('Rotate', self.angle)
 
 
 class Translate(Transform):
@@ -234,13 +234,30 @@ Randomly shift images
 def RandomShift(img, steering, throttle):
     if np.random.uniform() < 0.5:
         return img, steering,throttle
-    tx = np.random.randint(-5,5)
-    steering += tx * 30 * 0.005
+    tx = np.random.randint(-4,4)*30
+    steering += tx/30
     if np.abs(steering)>0.3:
         throttle=throttle*0.5
-        if np.abs(steering)>0.6:
-            throttle=0
-    return Shift(img, tx, np.random.randint(-50, 10)), steering, throttle
+    if np.abs(steering)>0.6:
+        throttle=0
+    return Shift(img, tx, np.random.randint(-5, 10)), steering, throttle
+
+
+def Rotate(img, angle):
+    rows, cols, depth = img.shape
+    M = cv2.getRotationMatrix2D((cols/2,rows/2), angle, 1)
+    return cv2.warpAffine(img, M, (cols, rows), borderMode=cv2.BORDER_REPLICATE)
+
+def RandomRotate(img, steering, throttle):
+    if np.random.uniform() < 0.5:
+        return img, steering,throttle
+    angle = np.random.randint(-25,25)
+    steering = steering + angle/5
+    if angle>10:
+        throttle=throttle*0.5
+    if np.abs(steering)>0.6 * 3.1415 *2:
+        throttle=0
+    return Rotate(img,angle), steering, throttle
 
 """
 Randomly flip the images
@@ -260,18 +277,29 @@ def brigthness(image, brigthness):
 """
 Randomly change the brightness
 """
-def RandomBrightness(img, steering):
+def RandomBrightness(img, steering, throttle):
     # if np.random.uniform() < 0.5:
     #     return img, steering
     # img[:, :, :] = img[:, :, :] * np.random.uniform()*2
-    return brigthness(img,-100+200*np.random.uniform()), steering
+    val=200*np.random.uniform()
+    if val>150:
+        throttle=throttle*0.5
+    return brigthness(img,val), steering, throttle
 
 def speedToClass(speed):
     classes=[0]*8
-    cl=int(speed/10)
+    cl=int(speed/(10*35/80))
     if cl<0:
         cl=0
     if cl>7:
         cl=7
     classes[cl]=1
     return classes
+
+def RandomNoise(img):
+    rnd=np.random.rand(int(img.shape[0]/2),int(img.shape[1]/2))
+    rnd=0.5+rnd*0.5
+    rnd=np.dstack([rnd,rnd,rnd])
+    rnd = cv2.GaussianBlur(rnd,(5,5),0)
+    rnd = cv2.resize(rnd, (img.shape[1],img.shape[0]))
+    return img*rnd
