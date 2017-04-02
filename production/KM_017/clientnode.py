@@ -44,7 +44,7 @@ def customLoss(y_true, y_pred):
 with open('model.json', 'r') as jfile:
     model = model_from_json(jfile.read())
 
-model.compile("adam", "mse")
+model.compile("adam", ["mse",'categorical_crossentropy'])
 
 weights_list=sorted(glob("weights.*"))
 
@@ -110,9 +110,9 @@ def sendValues():
             # brake = c_float(prediction[2])
         except queue.Empty:
             pass
-        Node.steerCommand(steer)
-        Node.throttleCommand(throttle)
-        Node.brakeCommand(brake)
+        Node.steerCommand(-steer)
+        # Node.throttleCommand(throttle)
+        # Node.brakeCommand(brake)
         time.sleep(0.01)
 
 thread = threading.Thread(target=make_prediction, args=())
