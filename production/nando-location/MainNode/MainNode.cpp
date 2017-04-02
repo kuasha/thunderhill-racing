@@ -167,7 +167,7 @@ public:
 
             if (std::shared_ptr < ImageDataMessage > incomingMessage = getSubclass < ImageDataMessage > (message))
             {
-                std::cout << "image received" << std::endl;
+                //std::cout << "image received" << std::endl;
                 std::vector <unsigned char> image = incomingMessage->getDataBuffer();
                 imageSize = image.size();
                 if (imageSize > imageData.size())
