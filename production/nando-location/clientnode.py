@@ -9,15 +9,15 @@ import h5py
 from keras import __version__ as keras_version
 import tensorflow as tf
 from keras import backend as K
-from Preprocess import *
 import cv2
 import time
 from data_buffer import DataBuffer
 import queue
 import threading
+import ctypes
 
 
-f = h5py.File("psyncModel.h5", mode='r')
+f = h5py.File("model.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -25,41 +25,22 @@ if model_version != keras_version:
 	print('You are using Keras version ', keras_version, ', but the model was built using ', model_version)
 
 
-def customLoss(y_true, y_pred):
-	return K.mean(K.square(y_pred - y_true), axis=-1)
-
-model = load_model("psyncModel.h5", custom_objects={'customLoss':customLoss})
+model = load_model("model.h5")
 graph = tf.get_default_graph()
 
 data_buffer = DataBuffer()
 res_queue = queue.Queue(maxsize=1)
 
-idxs = [0, 1, 2]
-means = [-2.135234308696, 0.690051203865, 62.68238949]
-stds = [0.000022089013, 0.000045442627, 13.48539298]
-
-debug = False
-
-
-def normalize_vector(xVec):
-	for i, mean, std in zip(idxs, means, stds):
-		xVec[i] -= mean
-		xVec[i] /= std
-	return xVec
+MAX = 33.706074
 
 
 def copyImage(byte_array, imageSize):
-	if imageSize > 8:
-		resize(byte_array, imageSize)
-		image = []
-		for i in range(imageSize):
-			image.append(byte_array[i])
-		return array.array('B', image).tostring()
-	return byte_array
+    new_array = np.ctypeslib.as_array(byte_array,shape=(imageSize,)).reshape((960, 480, 3))
+    return new_array
+	
 
 
 def imageReceived(imageSize, rawImage, speed, lat, lon):
-	print("image received with: ", speed, lat, lon)
 	jpegImage = copyImage(rawImage, imageSize)
 	data_buffer.add_item((jpegImage, speed, lat, lon))
 	
@@ -73,10 +54,6 @@ def make_prediction():
 			item = data_buffer.get_item_for_processing()
 			if item and len(item) == 4:
 				jpeg_image = item[0]
-				speed = item[1]
-				lat = item[2]
-				lon = item[3]
-
 				if jpeg_image:
 					image = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
 					image_array = np.asarray(image)
@@ -101,10 +78,11 @@ def sendValues():
 			steer = c_float(prediction[0])
 			throttle = c_float(prediction[1])
 			brake = c_float(prediction[2])
-			print("got values: ", steer, throttle, brake)
 		except queue.Empty:
 			pass
 		Node.steerCommand(steer)
+		# Node.throttleCommand(throttle)
+		# Node.brakeCommand(brake)
 		time.sleep(0.01)
 
 thread = threading.Thread(target=make_prediction, args=())
@@ -113,6 +91,7 @@ thread.start()
 thread2 = threading.Thread(target=sendValues, args=())
 thread2.daemon = True
 thread2.start()
+
 
 
 Node.connectPolySync()
