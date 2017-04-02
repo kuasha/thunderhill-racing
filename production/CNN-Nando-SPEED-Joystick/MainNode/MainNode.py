@@ -29,7 +29,7 @@ class MainNode(object):
         # We are using PS3 left joystick: so axis (0,1) run in pairs, left/right for 2, up/down for 3
         # Change this if you want to switch to another axis on your joystick!
         # Normally they are centered on (0,0)
-        updown = joystick.get_axis(0)
+        updown = joystick.get_axis(1)
         if updown < 0.0:
             updown = -updown
         else:
@@ -40,7 +40,7 @@ class MainNode(object):
         # We are using PS3 left joystick: so axis (0,1) run in pairs, left/right for 2, up/down for 3
         # Change this if you want to switch to another axis on your joystick!
         # Normally they are centered on (0,0)
-        updown = joystick.get_axis(0)
+        updown = joystick.get_axis(1)
         if updown < 0.0:
             updown = 0.0
         lib.MainNode_throttleCommand(self.obj, value+updown)
