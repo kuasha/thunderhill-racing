@@ -65,9 +65,16 @@ def imageReceived(imageSize, rawImage, speed, lat, lon):
 	
 Node = MainNode(imageReceived)
 
+X = []
+Y = []
+
 def make_prediction():
 	global graph
 	print('make prediction')
+
+	### recording flag is replaced with training flag to start image data collection
+	training = True
+
 	while True:
 		with graph.as_default():
 			item = data_buffer.get_item_for_processing()
@@ -95,6 +102,20 @@ def make_prediction():
 					# save only steering predictions
 					res_queue.put((steering_angle, throttle, brake))
 
+					# fill the training and testing queue
+					if len(X) < 100:
+						X.append(transformed_image_array)
+						Y.append(steering_angle)
+					else:
+						if len(X) == 100:
+							print("Ready for training!")
+
+					if training:
+						#print("Training: ")
+						#print("Right Stick Left|Right Axis value {:>6.3f}".format(leftright) )
+						#print("Right Stick Up|Down Axis value {:>6.3f}".format(updown) )
+						X.append(transformed_image_array)
+						Y.append(steering_angle)
 
 def sendValues():
 	steer = 0.0
@@ -115,6 +136,58 @@ def sendValues():
 		Node.throttleCommand(throttle)
 		Node.brakeCommand(brake)
 		time.sleep(0.01)
+
+def batchgen(X, Y):
+	while 1:
+		i = int(random()*len(X))
+		y = Y[i]
+		image = X[i]
+		y = np.array([[y]])
+		image = image.reshape(1, img_cols, img_rows, ch)
+		yield image, y
+
+def model_trainer(fileModelJSON):
+	print("Model Trainer Thread Starting...")
+
+	fileWeights = fileModelJSON.replace('json', 'h5')
+	with open(fileModelJSON, 'r') as jfile:
+		model = model_from_json(json.load(jfile))
+
+	adam = Adam(lr=0.00001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
+	model.compile(optimizer=adam, loss="mse", metrics=['accuracy'])
+	model.load_weights(fileWeights)
+	print("Loaded model from disk:")
+	model.summary()
+
+	# start training loop...
+	while 1:
+		if len(X) > 100:
+			batch_size = 20
+			samples_per_epoch = int(len(X)/batch_size)
+			val_size = int(samples_per_epoch/10)
+			if val_size < 10:
+				val_size = 10
+			nb_epoch = 100
+
+			history = model.fit_generator(batchgen(X,Y),
+					samples_per_epoch=samples_per_epoch, nb_epoch=nb_epoch,
+					validation_data=batchgen(X,Y),
+					nb_val_samples=val_size,
+					verbose=1)
+
+			print("Saving model to disk: ",fileModelJSON,"and",fileWeights)
+			if Path(fileModelJSON).is_file():
+				os.remove(fileModelJSON)
+			json_string = model.to_json()
+			with open(fileModelJSON,'w' ) as f:
+				json.dump(json_string, f)
+			if Path(fileWeights).is_file():
+				os.remove(fileWeights)
+			model.save_weights(fileWeights)
+		else:
+			print("Not Ready!  Sleeping for 5...")
+			sleep(5)
+
 
 thread = threading.Thread(target=make_prediction, args=())
 thread.daemon = True
