@@ -62,9 +62,9 @@ private:
     ps_msg_type _imageType;
     ofstream file = ofstream("output.txt", std::ios_base::app | std::ofstream::out);
     Buffer<polysync::datamodel::Motion> *motionBuffer = new Buffer<polysync::datamodel::Motion>(1);
-    Buffer<DDS_float> *steerBuffer = new Buffer<DDS_float>(1);
-    Buffer<DDS_float> *brakeBuffer = new Buffer<DDS_float>(1);
-    Buffer<DDS_float> *throttleBuffer = new Buffer<DDS_float>(1);
+    Buffer<DDS_double> *steerBuffer = new Buffer<DDS_double>(1);
+    Buffer<DDS_double> *brakeBuffer = new Buffer<DDS_double>(1);
+    Buffer<DDS_double> *throttleBuffer = new Buffer<DDS_double>(1);
     Buffer<polysync::datamodel::ImageDataMessage> *imageBuffer = new Buffer<polysync::datamodel::ImageDataMessage>(1);
 
 public:
