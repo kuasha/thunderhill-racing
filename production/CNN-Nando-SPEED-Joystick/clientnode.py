@@ -22,7 +22,7 @@ import threading
 import json
 
 
-f = h5py.File("model.h5", mode='r')
+f = h5py.File("psyncPosNet.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -33,7 +33,7 @@ if model_version != keras_version:
 def customLoss(y_true, y_pred):
 	return K.mean(K.square(y_pred - y_true), axis=-1)
 
-model = load_model("model.h5", custom_objects={'customLoss':customLoss})
+model = load_model("psyncPosNet.h5", custom_objects={'customLoss':customLoss})
 graph = tf.get_default_graph()
 
 data_buffer = DataBuffer()
@@ -152,16 +152,22 @@ def batchgen(X, Y):
 		image = image.reshape(1, img_cols, img_rows, ch)
 		yield image, y
 
-def model_trainer(fileModelJSON):
+def model_trainer(fileModelH5):
 	print("Model Trainer Thread Starting...")
+	tf = h5py.File(fileModelH5, mode='r')
+	tmodel_version = f.attrs.get('keras_version')
 
-	fileWeights = fileModelJSON.replace('json', 'h5')
-	with open(fileModelJSON, 'r') as jfile:
-		model = model_from_json(json.load(jfile))
+	if tmodel_version != keras_version:
+		print('You are using Keras version ', keras_version, ', but the model was built using ', tmodel_version)
+
+	def customLoss(y_true, y_pred):
+		return K.mean(K.square(y_pred - y_true), axis=-1)
+
+	tmodel = load_model(fileModelH5, custom_objects={'customLoss':customLoss})
+	graph = tf.get_default_graph()
 
 	adam = Adam(lr=0.00001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
-	model.compile(optimizer=adam, loss="mse", metrics=['accuracy'])
-	model.load_weights(fileWeights)
+	tmodel.compile(optimizer=adam, loss="mse", metrics=['accuracy'])
 	print("Loaded model from disk:")
 	model.summary()
 
@@ -175,21 +181,14 @@ def model_trainer(fileModelJSON):
 				val_size = 10
 			nb_epoch = 100
 
-			history = model.fit_generator(batchgen(X,Y),
+			history = tmodel.fit_generator(batchgen(X,Y),
 					samples_per_epoch=samples_per_epoch, nb_epoch=nb_epoch,
 					validation_data=batchgen(X,Y),
 					nb_val_samples=val_size,
 					verbose=1)
 
 			print("Saving model to disk: ",fileModelJSON,"and",fileWeights)
-			if Path(fileModelJSON).is_file():
-				os.remove(fileModelJSON)
-			json_string = model.to_json()
-			with open(fileModelJSON,'w' ) as f:
-				json.dump(json_string, f)
-			if Path(fileWeights).is_file():
-				os.remove(fileWeights)
-			model.save_weights(fileWeights)
+			tmodel.save(fileModelH5)
 		else:
 			print("Not Ready!  Sleeping for 5...")
 			sleep(5)
@@ -210,7 +209,7 @@ if __name__ == '__main__':
 	thread2.start()
 
 	# start training thread
-	thread3 = threading.Thread(target = model_trainer, args=('modelTrained.json'))
+	thread3 = threading.Thread(target = model_trainer, args=('modelTrained.h5'))
 	thread3.daemon = True
 	thread3.start()
 
