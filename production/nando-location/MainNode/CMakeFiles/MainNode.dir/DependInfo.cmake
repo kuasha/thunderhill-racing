@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/media/nadia/U/thunderhill-racing_updated_controller/production/CNN-GPS-jendrik/MainNode/MainNode.cpp" "/media/nadia/U/thunderhill-racing_updated_controller/production/CNN-GPS-jendrik/MainNode/CMakeFiles/MainNode.dir/MainNode.cpp.o"
+  "/home/karol/projects/udacity/Racing/thunderhill-racing/production/nando-location/MainNode/MainNode.cpp" "/home/karol/projects/udacity/Racing/thunderhill-racing/production/nando-location/MainNode/CMakeFiles/MainNode.dir/MainNode.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

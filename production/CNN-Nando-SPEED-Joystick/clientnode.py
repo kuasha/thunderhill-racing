@@ -84,40 +84,42 @@ def make_prediction():
 					image_array = cv2.resize(image_array, (160, 80))
 					prediction = model.predict(image_array[None, :, :, :], batch_size=1)[0]
 					steering_angle = float(prediction[0])
-					# throttle = float(prediction[1])
-					# brake = float(prediction[2])
+					throttle = 0.0 #float(prediction[1])
+					brake = 0.0 #float(prediction[2])
 
-					# if brake > 0.5:
-					#	throttle = -brake
+					if brake > 0.5:
+						throttle = -brake
 
-					if res_queue.full(): # maintain a single most recent prediction in the queue
+					if res_queue.full(): # maintain a single most recent prediction in the queu
 						res_queue.get(False)
 					# save only steering predictions
-					res_queue.put((steering_angle))
+					res_queue.put((steering_angle, throttle, brake))
 
 
 def sendValues():
-	steer = 0
-	throttle = 0
-	brake = 0
+	steer = 0.0
+	throttle = 0.0
+	brake = 0.0
 	while 1:
 		try:
 			prediction = res_queue.get(block=False)
-			steer = c_float(prediction[0])
-			# throttle = c_float(prediction[1])
-			# brake = c_float(prediction[2])
+			print(prediction)
+			steer = float(prediction[0])
+			throttle = float(prediction[1])
+			brake = float(prediction[2])
 			print("got values: ", steer, throttle, brake)
 		except queue.Empty:
 			pass
 		Node.steerCommand(steer)
 		# use cruise control
-		# Node.throttleCommand(throttle)
-		# Node.brakeCommand(brake)
+		Node.throttleCommand(throttle)
+		Node.brakeCommand(brake)
 		time.sleep(0.01)
 
 thread = threading.Thread(target=make_prediction, args=())
 thread.daemon = True
 thread.start()
+
 thread2 = threading.Thread(target=sendValues, args=())
 thread2.daemon = True
 thread2.start()
