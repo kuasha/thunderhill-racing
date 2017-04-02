@@ -188,14 +188,23 @@ def model_trainer(fileModelJSON):
 			print("Not Ready!  Sleeping for 5...")
 			sleep(5)
 
+if __name__ == '__main__':
+	parser = argparse.ArgumentParser(description='Remote Driving')
+	parser.add_argument('model', type=str,
+		help='Path to model definition json. Model weights should be on the same path.')
+	args = parser.parse_args()
 
-thread = threading.Thread(target=make_prediction, args=())
-thread.daemon = True
-thread.start()
+	thread = threading.Thread(target=make_prediction, args=())
+	thread.daemon = True
+	thread.start()
 
-thread2 = threading.Thread(target=sendValues, args=())
-thread2.daemon = True
-thread2.start()
+	thread2 = threading.Thread(target=sendValues, args=())
+	thread2.daemon = True
+	thread2.start()
 
+	# start training thread
+	thread3 = Thread(target = model_trainer, args=(args.model,))
+	thread3.daemon = True
+	thread3.start()
 
-Node.connectPolySync()
+	Node.connectPolySync()
