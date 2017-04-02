@@ -22,7 +22,7 @@ model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
 if model_version != keras_version:
-	print('You are using Keras version ', keras_version, ', but the model was built using ', model_version)
+    print('You are using Keras version ', keras_version, ', but the model was built using ', model_version)
 
 
 model = load_model("model.h5")
@@ -37,53 +37,52 @@ MAX = 33.706074
 def copyImage(byte_array, imageSize):
     new_array = np.ctypeslib.as_array(byte_array,shape=(imageSize,)).reshape((960, 480, 3))
     return new_array
-	
+
 
 
 def imageReceived(imageSize, rawImage, speed, lat, lon):
-	jpegImage = copyImage(rawImage, imageSize)
-	data_buffer.add_item((jpegImage, speed, lat, lon))
-	
+    jpegImage = copyImage(rawImage, imageSize)
+    data_buffer.add_item((jpegImage, speed, lat, lon))
+
 Node = MainNode(imageReceived)
 
 def make_prediction():
-	global graph
-	print('make prediction')
-	while True:
-		with graph.as_default():
-			item = data_buffer.get_item_for_processing()
-			if item and len(item) == 4:
-				jpeg_image = item[0]
-				if jpeg_image:
-					image = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
-					image_array = np.asarray(image)
-					image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
-					image_array = cv2.resize(image_array, (160, 80))
-					prediction = model.predict(image_array[None, :, :, :], batch_size=1)[0]
-					steering_angle = float(prediction[0])
-					throttle = 0
-					brake = 0
-					if res_queue.full(): # maintain a single most recent prediction in the queue
-						res_queue.get(False)
-					res_queue.put((steering_angle, throttle, brake))
+    global graph
+    while True:
+        with graph.as_default():
+            item = data_buffer.get_item_for_processing()
+            if item and len(item) == 4:
+                jpeg_image = item[0]
+                image = np.array(Image.frombytes('RGB', [960,480], jpeg_image, 'raw'))
+                image_array = np.asarray(image)
+                image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
+                image_array = cv2.resize(image_array, (160, 80))
+                prediction = model.predict(image_array[None, :, :, :], batch_size=1)[0]
+                print(prediction)
+                steering_angle = float(prediction[0])
+                throttle = 0
+                brake = 0
+                if res_queue.full(): # maintain a single most recent prediction in the queue
+                    res_queue.get(False)
+                res_queue.put((steering_angle, throttle, brake))
 
 
 def sendValues():
-	steer = 0
-	throttle = 0
-	brake = 0
-	while 1:
-		try:
-			prediction = res_queue.get(block=False)
-			steer = c_float(prediction[0])
-			throttle = c_float(prediction[1])
-			brake = c_float(prediction[2])
-		except queue.Empty:
-			pass
-		Node.steerCommand(steer)
-		# Node.throttleCommand(throttle)
-		# Node.brakeCommand(brake)
-		time.sleep(0.01)
+    steer = 0
+    throttle = 0
+    brake = 0
+    while 1:
+        try:
+            prediction = res_queue.get(block=False)
+            steer = c_float(prediction[0])
+            # throttle = c_float(prediction[1])
+            # brake = c_float(prediction[2])
+        except queue.Empty:
+            pass
+        Node.steerCommand(steer)
+        # Node.throttleCommand(throttle)
+        # Node.brakeCommand(brake)
+        time.sleep(0.01)
 
 thread = threading.Thread(target=make_prediction, args=())
 thread.daemon = True
@@ -91,7 +90,5 @@ thread.start()
 thread2 = threading.Thread(target=sendValues, args=())
 thread2.daemon = True
 thread2.start()
-
-
 
 Node.connectPolySync()
