@@ -1,4 +1,4 @@
-# Install script for directory: /media/nadia/U/thunderhill-racing_updated_controller/production/CNN-GPS-jendrik/MainNode
+# Install script for directory: /home/karol/projects/udacity/Racing/thunderhill-racing/production/nando-location/MainNode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/nadia/U/thunderhill-racing_updated_controller/production/CNN-GPS-jendrik/MainNode/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/karol/projects/udacity/Racing/thunderhill-racing/production/nando-location/MainNode/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/media/nadia/U/thunderhill-racing_updated_controller/production/CNN-GPS-jendrik/MainNode/MainNode.cpp
+/home/karol/projects/udacity/Racing/thunderhill-racing/production/nando-location/MainNode/MainNode.cpp
 iostream
 -
 PolySyncNode.hpp
@@ -14,7 +14,7 @@ PolySyncNode.hpp
 PolySyncDataModel.hpp
 -
 polysync_dynamic_driver_commands.h
-/media/nadia/U/thunderhill-racing_updated_controller/production/CNN-GPS-jendrik/MainNode/polysync_dynamic_driver_commands.h
+/home/karol/projects/udacity/Racing/thunderhill-racing/production/nando-location/MainNode/polysync_dynamic_driver_commands.h
 math.h
 -
 
