@@ -1,0 +1,231 @@
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491030497.562302596
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491030497.562342757
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491030534.231158578
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491030534.234662368
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491030899.090853446
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491030899.092055010
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491031303.528767073
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491031303.528803675
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491031524.512091643
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491031524.512128045
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491031596.788647343
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491031596.788674832
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:29:16 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491031756.101670469
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:29:16 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491031756.102932531
+========================================================================================
+Context     : DDS_DomainParticipant_get_discovered_participant_data
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : main thread 7ff6863f3700
+Internals   : sac_domainParticipant.c/2067/6.6.2p1/af3a357/aec814d
+----------------------------------------------------------------------------------------
+Report      : Bad Parameter: instance handle = DDS_HANDLE_NIL
+Internals   : u_instanceHandleClaim/u_instanceHandle.c/118/774/1491031757.081630670
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491031937.280331833
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491031937.280361728
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491032270.943717060
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491032270.943758023
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491034363.834222149
+========================================================================================
+Report      : ERROR
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491034363.834266695
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491085477.941165726
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491085477.941186594
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491085605.655084727
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491085605.655116226
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1491119171.327678805
+========================================================================================
+Report      : ERROR
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : Problem opening 'durability'
+
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1491119171.327766242

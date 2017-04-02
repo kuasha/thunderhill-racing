@@ -1,0 +1,2287 @@
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 832554691 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491030497.540605905
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491030497.541197807
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491030497.560966414
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491030497.561055860
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491030497.562048297
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491030497.562359772
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:17 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : ddsi2 7f8ee1779700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491030497.603843659
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:18 CEST 2017
+Description : writer 319fc6c3:8e:1:2c2 considering reader 4fa8551e:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : ddsi2 7f8ee1779700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030498.636449211
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:18 CEST 2017
+Description : writer 319fc6c3:8e:1:2c2 considering reader 724ed11f:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : ddsi2 7f8ee1779700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030498.636530662
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:18 CEST 2017
+Description : writer 319fc6c3:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : ddsi2 7f8ee1779700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030498.636552591
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:18 CEST 2017
+Description : writer 319fc6c3:8e:1:2c2 considering reader 4fa8551e:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : recv 7f8efddfa700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030498.637621293
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:18 CEST 2017
+Description : writer 319fc6c3:8e:1:2c2 considering reader 724ed11f:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : recv 7f8efddfa700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030498.637683788
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:18 CEST 2017
+Description : writer 319fc6c3:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : recv 7f8efddfa700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030498.637714373
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:34 CEST 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : ddsi2 7f8ee1779700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491030514.847079072
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:44 CEST 2017
+Description : Durability Client for spliced stopped
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1491030524.867193025
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:44 CEST 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <31317>
+Thread      : spliced 7f8f8593c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491030524.867379153
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 515577151 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491030534.210600827
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491030534.213813479
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491030534.223092860
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491030534.225793007
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491030534.229030889
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491030534.236635317
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:08:54 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : ddsi2 7f82c2d74700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491030534.255076886
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : thread main failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : lease 7f8309812700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030536.248247554
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : thread tev failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : lease 7f8309812700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030536.248327328
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : writer 1ebb153f:8e:1:2c2 considering reader 4fa8551e:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : ddsi2 7f82c2d74700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030536.265349967
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : writer 1ebb153f:8e:1:2c2 considering reader 724ed11f:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : ddsi2 7f82c2d74700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030536.265419943
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : writer 1ebb153f:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : ddsi2 7f82c2d74700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030536.265442478
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : writer 1ebb153f:8e:1:2c2 considering reader 4fa8551e:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : recv 7f83094fa700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030536.268309952
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : writer 1ebb153f:8e:1:2c2 considering reader 724ed11f:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : recv 7f83094fa700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030536.268381687
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:56 CEST 2017
+Description : writer 1ebb153f:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : recv 7f83094fa700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030536.268426310
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:57 CEST 2017
+Description : thread main once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : lease 7f8309812700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030537.249014192
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:08:57 CEST 2017
+Description : thread tev once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : lease 7f8309812700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030537.250794325
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:09:54 CEST 2017
+Description : Missed heartbeat for node 1336431902. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : OSPL Garbage Collector 7f830016f700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491030594.278138644
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:09:54 CEST 2017
+Description : Missed heartbeat for node 1917767967. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : OSPL Garbage Collector 7f830016f700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491030594.378916859
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:09:59 CEST 2017
+Description : Missed heartbeat for node 1280435363. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : OSPL Garbage Collector 7f830016f700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491030599.285075011
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:10:49 CEST 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : ddsi2 7f82c2d74700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491030649.491131139
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:10:59 CEST 2017
+Description : Durability Client for spliced stopped
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1491030659.496146217
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:10:59 CEST 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <31410>
+Thread      : spliced 7f839104b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491030659.496270837
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 848532214 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491030899.037542384
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491030899.041848592
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491030899.082558648
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491030899.084757288
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491030899.088631566
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491030899.092937333
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:14:59 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : ddsi2 7fd25a761700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491030899.138063658
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : thread main failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : lease 7fd2a1212700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030901.115696289
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : thread tev failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : lease 7fd2a1212700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030901.115759812
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : ddsi2 7fd25a761700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030901.144059822
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 9e78f91:b2:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : ddsi2 7fd25a761700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030901.144128629
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 7d3d2593:b4:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : ddsi2 7fd25a761700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030901.144149655
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 588f4fad:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : ddsi2 7fd25a761700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030901.144163436
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : ddsi2 7fd25a761700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491030901.144186634
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : recv 7fd2a0eba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030901.150651802
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 9e78f91:b2:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : recv 7fd2a0eba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030901.150718903
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 7d3d2593:b4:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : recv 7fd2a0eba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030901.150750490
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 588f4fad:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : recv 7fd2a0eba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030901.150774916
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:01 CEST 2017
+Description : writer 329392f6:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : recv 7fd2a0eba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491030901.150800335
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:02 CEST 2017
+Description : thread main once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : lease 7fd2a1212700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030902.115855659
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:15:02 CEST 2017
+Description : thread tev once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : lease 7fd2a1212700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491030902.115914047
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:20 CEST 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : ddsi2 7fd25a761700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491031280.945537654
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:30 CEST 2017
+Description : Durability Client for spliced stopped
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1491031290.946537484
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:30 CEST 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <32731>
+Thread      : spliced 7fd328a05700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491031290.946671827
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1553191941 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491031303.503509308
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491031303.507241875
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491031303.527946285
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031303.528053132
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491031303.528568791
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : spliced 7f4dcc0bb700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491031303.528819772
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:21:43 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : ddsi2 7f4cf99e2700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031303.565569982
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : thread main failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : lease 7f4da9c1c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491031305.549462252
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : thread tev failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : lease 7f4da9c1c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491031305.549560758
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : ddsi2 7f4cf99e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031305.568112372
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 2d69225c:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : ddsi2 7f4cf99e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031305.568185726
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 12314d93:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : ddsi2 7f4cf99e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031305.568208741
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : ddsi2 7f4cf99e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031305.568224624
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 2d1613ef:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : ddsi2 7f4cf99e2700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031305.568238971
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : recv 7f4d4456d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031305.570154113
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 2d69225c:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : recv 7f4d4456d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031305.570231717
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 12314d93:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : recv 7f4d4456d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031305.570276025
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 2d1613ef:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : recv 7f4d4456d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031305.570317371
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:45 CEST 2017
+Description : writer 5c93d405:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : recv 7f4d4456d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031305.570347097
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:46 CEST 2017
+Description : thread main once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : lease 7f4da9c1c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491031306.549696593
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:21:46 CEST 2017
+Description : thread tev once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <656>
+Thread      : lease 7f4da9c1c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491031306.549767510
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 494469440 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491031524.353977556
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491031524.354788035
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491031524.505869377
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031524.505963247
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491031524.511817363
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : spliced 7f02670d4700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491031524.512156708
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:25:24 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : ddsi2 7f01c2ffd700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031524.546870102
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : ddsi2 7f01c2ffd700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031525.562703147
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 2d69225c:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : ddsi2 7f01c2ffd700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031525.562802534
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 12314d93:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : ddsi2 7f01c2ffd700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031525.562821565
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : ddsi2 7f01c2ffd700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031525.562835234
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 2d1613ef:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : ddsi2 7f01c2ffd700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031525.562848066
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : recv 7f01df57e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031525.568063587
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 12314d93:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : recv 7f01df57e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031525.568146220
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 2d69225c:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : recv 7f01df57e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031525.568383769
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 2d1613ef:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : recv 7f01df57e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031525.568420039
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:25:25 CEST 2017
+Description : writer 1d790140:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1040>
+Thread      : recv 7f01df57e700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031525.568642010
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1548142989 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491031596.737084821
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491031596.750276117
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491031596.787709477
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031596.787811220
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491031596.788448160
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : spliced 7f5d9132a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491031596.788688407
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:26:36 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : ddsi2 7f5d00265700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031596.840999147
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : ddsi2 7f5d00265700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031597.867960171
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 2d69225c:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : ddsi2 7f5d00265700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031597.868027765
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 12314d93:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : ddsi2 7f5d00265700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031597.868046143
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : ddsi2 7f5d00265700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031597.868059858
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 2d1613ef:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : ddsi2 7f5d00265700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031597.868071910
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 2d69225c:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : recv 7f5d0975c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031597.871576957
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 2d1613ef:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : recv 7f5d0975c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031597.871640579
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 12314d93:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : recv 7f5d0975c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031597.871678602
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : recv 7f5d0975c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031597.871703251
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:26:37 CEST 2017
+Description : writer 5c46c98d:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : recv 7f5d0975c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031597.871728929
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:27:05 CEST 2017
+Description : Missed heartbeat for node 305221011. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : OSPL Garbage Collector 7f5d005f0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491031625.965035014
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:27:05 CEST 2017
+Description : Missed heartbeat for node 756421615. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : OSPL Garbage Collector 7f5d005f0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491031625.985494041
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:27:06 CEST 2017
+Description : Missed heartbeat for node 761864796. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <1212>
+Thread      : OSPL Garbage Collector 7f5d005f0700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491031626.005876892
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:29:15 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1707075629 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491031755.977528899
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:29:15 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491031755.980403731
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:29:16 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491031756.097944652
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:29:16 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031756.098081263
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:16 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491031756.101438169
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:16 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : spliced 7ff68640a700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491031756.102961366
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:29:16 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : ddsi2 7ff5f4161700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031756.160942006
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : xmit.user 7ff5fe8a9700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031757.165608448
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 41c9616e:b4:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : xmit.user 7ff5fe8a9700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031757.165670947
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 6a1dc3ca:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : xmit.user 7ff5fe8a9700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031757.165691937
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : xmit.user 7ff5fe8a9700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031757.165707868
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 15af0bfa:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : xmit.user 7ff5fe8a9700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491031757.165733823
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 6a1dc3ca:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : recv 7ff5fe8ba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031757.167940293
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : recv 7ff5fe8ba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031757.168019070
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 15af0bfa:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : recv 7ff5fe8ba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031757.168065659
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 41c9616e:b4:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : recv 7ff5fe8ba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031757.168096119
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:29:17 CEST 2017
+Description : writer 65bfe82d:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <1703>
+Thread      : recv 7ff5fe8ba700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491031757.168132067
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 556736195 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491031937.247438463
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491031937.262202564
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491031937.279478853
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031937.279587119
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491031937.280147433
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : spliced 7fbc0b308700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491031937.280375732
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:17 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : ddsi2 7fbb78c63700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491031937.329507672
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:44 CEST 2017
+Description : Missed heartbeat for node 1780335562. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : OSPL Garbage Collector 7fbb78fee700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491031964.020320808
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:44 CEST 2017
+Description : Missed heartbeat for node 1103716718. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : OSPL Garbage Collector 7fbb78fee700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491031964.423185995
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:32:44 CEST 2017
+Description : Missed heartbeat for node 363793402. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <1930>
+Thread      : OSPL Garbage Collector 7fbb78fee700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491031964.503678052
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1714082448 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491032270.932441738
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491032270.933154120
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491032270.942920844
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491032270.943049818
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491032270.943534115
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : spliced 7fc3203b7700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491032270.943775891
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:37:50 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : ddsi2 7fc24dce4700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491032270.991292786
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : ddsi2 7fc24dce4700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491032272.009071670
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 5478c48a:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : ddsi2 7fc24dce4700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491032272.009189426
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 6de0dda3:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : ddsi2 7fc24dce4700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491032272.009226154
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 3dc802d4:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : ddsi2 7fc24dce4700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491032272.009241333
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : ddsi2 7fc24dce4700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491032272.009254479
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 20cbef10:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : recv 7fc29886d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491032272.011127592
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : recv 7fc29886d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491032272.011331777
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 5478c48a:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : recv 7fc29886d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491032272.011393671
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 6de0dda3:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : recv 7fc29886d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491032272.011446853
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 09:37:52 CEST 2017
+Description : writer 662ad290:8e:1:2c2 considering reader 3dc802d4:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : recv 7fc29886d700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491032272.012058298
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:38:07 CEST 2017
+Description : Missed heartbeat for node 1036518100. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : OSPL Garbage Collector 7fc2906f9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491032287.343750825
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:38:07 CEST 2017
+Description : Missed heartbeat for node 1417200778. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : OSPL Garbage Collector 7fc2906f9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491032287.364241017
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 09:38:07 CEST 2017
+Description : Missed heartbeat for node 1843453347. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <2847>
+Thread      : OSPL Garbage Collector 7fc2906f9700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491032287.384610829
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 2124853975 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491034363.813260544
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491034363.817739590
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491034363.833492905
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491034363.833608735
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491034363.834058184
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : spliced 7f29c431c700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491034363.834283046
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:43 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : ddsi2 7f2918777700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491034363.863529295
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : thread main failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : lease 7f293ca22700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491034365.849413408
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : thread tev failed to make progress
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : lease 7f293ca22700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491034365.849479519
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 5d299a2c:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : ddsi2 7f2918777700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491034365.868526877
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 4db23e73:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : ddsi2 7f2918777700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491034365.868603198
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 79dbda9:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : ddsi2 7f2918777700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491034365.868624312
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : ddsi2 7f2918777700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491034365.868638465
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 33c5e8f2:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : ddsi2 7f2918777700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491034365.868651328
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 79dbda9:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : recv 7f293c74b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491034365.871663520
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 7f4d1ce5:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : recv 7f293c74b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491034365.871750847
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 33c5e8f2:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : recv 7f293c74b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491034365.871787246
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 5d299a2c:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : recv 7f293c74b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491034365.871828831
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:45 CEST 2017
+Description : writer 7ea6b2d7:8e:1:2c2 considering reader 4db23e73:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : recv 7f293c74b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491034365.872048862
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:46 CEST 2017
+Description : thread main once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : lease 7f293ca22700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491034366.849568174
+========================================================================================
+Report      : WARNING
+Date        : Sat Apr 01 10:12:46 CEST 2017
+Description : thread tev once again made progress
+
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : lease 7f293ca22700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_servicelease.c/120/0/1491034366.849623921
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:59 CEST 2017
+Description : Missed heartbeat for node 127778217. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : OSPL Garbage Collector 7f2938682700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491034379.239938157
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:59 CEST 2017
+Description : Missed heartbeat for node 868608242. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : OSPL Garbage Collector 7f2938682700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491034379.260247869
+========================================================================================
+Report      : INFO
+Date        : Sat Apr 01 10:12:59 CEST 2017
+Description : Missed heartbeat for node 1563007532. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <6638>
+Thread      : OSPL Garbage Collector 7f2938682700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491034379.280612973
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1312080183 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491085477.939302920
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491085477.939626896
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491085477.940679806
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491085477.940732596
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491085477.941047453
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491085477.941197171
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:24:37 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : ddsi2 7fe486f7c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491085477.950542467
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:24:38 CEST 2017
+Description : writer 4e34c137:8e:1:2c2 considering reader 1e21004f:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : ddsi2 7fe486f7c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491085478.954238652
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:24:38 CEST 2017
+Description : writer 4e34c137:8e:1:2c2 considering reader 2970f2f9:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : ddsi2 7fe486f7c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491085478.954316496
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:24:38 CEST 2017
+Description : writer 4e34c137:8e:1:2c2 considering reader 1e21004f:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : recv 7fe4bfa7a700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491085478.954898553
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:24:38 CEST 2017
+Description : writer 4e34c137:8e:1:2c2 considering reader 2970f2f9:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : recv 7fe4bfa7a700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491085478.954953713
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:25:04 CEST 2017
+Description : Missed heartbeat for node 1417614906. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : OSPL Garbage Collector 7fe4a46f6700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491085504.042297032
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:25:49 CEST 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : ddsi2 7fe486f7c700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491085549.733166288
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:25:59 CEST 2017
+Description : Durability Client for spliced stopped
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1491085559.727510668
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:25:59 CEST 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <27335>
+Thread      : spliced 7fe5475c6700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491085559.727586672
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 438487964 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491085605.652333459
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491085605.652716013
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491085605.654362804
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491085605.654457974
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491085605.654962626
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : spliced 7f603599e700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491085605.655129063
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 00:26:45 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : ddsi2 7f5f84f78700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491085605.664904610
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 1e21004f:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : ddsi2 7f5f84f78700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491085606.675676119
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader d40e5ba:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : ddsi2 7f5f84f78700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491085606.675727093
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 2b933e3:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : ddsi2 7f5f84f78700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491085606.675741335
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 5c4375ed:8e:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : ddsi2 7f5f84f78700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491085606.675749881
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 2970f2f9:92:1:2c7 non-responsive
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : ddsi2 7f5f84f78700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1491085606.675756544
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 2b933e3:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : recv 7f5fade5c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491085606.677320003
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 1e21004f:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : recv 7f5fade5c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491085606.677379498
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader d40e5ba:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : recv 7f5fade5c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491085606.677410737
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 5c4375ed:8e:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : recv 7f5fade5c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491085606.677431888
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 00:26:46 CEST 2017
+Description : writer 1a22cb9c:8e:1:2c2 considering reader 2970f2f9:92:1:2c7 responsive again
+
+Node        : karol-hyper
+Process     : python3.5 <27984>
+Thread      : recv 7f5fade5c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1491085606.677453408
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 733989895 from [1,2147483647]
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1491119171.284139487
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : Service cmsoap disabled
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1491119171.291392585
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : Durability Client for spliced started
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1491119171.326259177
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491119171.326351031
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1491119171.327373121
+========================================================================================
+Report      : WARNING
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : Could not start service durability as thread
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1491119171.327784159
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:11 CEST 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : ddsi2 7f151ddfc700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1491119171.377304303
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:33 CEST 2017
+Description : Missed heartbeat for node 1338240669. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119193.544026596
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:58 CEST 2017
+Description : Missed heartbeat for node 400618042. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119218.226418369
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:46:58 CEST 2017
+Description : Missed heartbeat for node 2119017641. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119218.246694363
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:47:02 CEST 2017
+Description : Missed heartbeat for node 1164758928. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119222.724933660
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:48:19 CEST 2017
+Description : Missed heartbeat for node 774619074. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119299.938805020
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:48:19 CEST 2017
+Description : Missed heartbeat for node 1509708455. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119299.959093925
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:48:24 CEST 2017
+Description : Missed heartbeat for node 1217677554. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119304.242408958
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:49:15 CEST 2017
+Description : Missed heartbeat for node 1749820312. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119355.378546108
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:49:31 CEST 2017
+Description : Missed heartbeat for node 493533350. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119371.173994958
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:49:31 CEST 2017
+Description : Missed heartbeat for node 1471006839. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119371.194307578
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:49:35 CEST 2017
+Description : Missed heartbeat for node 993036300. (DCPSPublication is complete)
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : OSPL Garbage Collector 7f151ea6b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1491119375.794467914
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:52:05 CEST 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : ddsi2 7f151ddfc700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491119525.698300686
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:52:15 CEST 2017
+Description : Durability Client for spliced stopped
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1491119535.704500384
+========================================================================================
+Report      : INFO
+Date        : Sun Apr 02 09:52:15 CEST 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : karol-hyper
+Process     : python3.5 <23286>
+Thread      : spliced 7f15a7920700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1491119535.704727226
