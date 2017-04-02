@@ -1769,3 +1769,575 @@ Node        : AKKA-DataScience-P50-01
 Process     : python3.5 <314>
 Thread      : spliced 7ff4d6a00700
 Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490131697.110781343
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1215317010 from [1,2147483647]
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490678905.011396653
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490678905.041035955
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : Durability Client for spliced started
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490678905.058970514
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490678905.059198555
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1490678905.067912365
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : Could not start service durability as thread
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1490678905.068447736
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : ddsi2 7f9df9962700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490678905.353187970
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 5b50e714:8e:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : xmit.user 7f9dfb43a700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490678906.379744263
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 4d159871:c4:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : xmit.user 7f9dfb43a700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490678906.383655732
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 2d67d1a6:92:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : xmit.user 7f9dfb43a700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490678906.383728456
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 67413ce0:c4:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : xmit.user 7f9dfb43a700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490678906.383758808
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 5b50e714:8e:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : recv 7f9dfb44b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490678906.414545587
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 4d159871:c4:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : recv 7f9dfb44b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490678906.419479476
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 2d67d1a6:92:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : recv 7f9dfb44b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490678906.421877565
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Description : writer 48704412:8e:1:2c2 considering reader 67413ce0:c4:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : recv 7f9dfb44b700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490678906.428606185
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:37 PDT 2017
+Description : Missed heartbeat for node 1732328672. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : OSPL Garbage Collector 7f9df9ced700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490678917.566844867
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:37 PDT 2017
+Description : Missed heartbeat for node 1205682835. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : OSPL Garbage Collector 7f9df9ced700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490678917.780240080
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:38 PDT 2017
+Description : Missed heartbeat for node 936725255. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : OSPL Garbage Collector 7f9df9ced700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490678918.096297200
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:28:38 PDT 2017
+Description : Missed heartbeat for node 1293260913. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : OSPL Garbage Collector 7f9df9ced700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490678918.117308756
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:29:01 PDT 2017
+Description : Missed heartbeat for node 761778598. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : OSPL Garbage Collector 7f9df9ced700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490678941.170071776
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:29:07 PDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : ddsi2 7f9df9962700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490678947.106680628
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:29:16 PDT 2017
+Description : Durability Client for spliced stopped
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStop/spliced.c/374/1/1490678956.974415646
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:29:16 PDT 2017
+Description : ================================================
+              == The service 'splicedaemon' has now terminated. 
+              ================================================
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490678956.974814585
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 168407361 from [1,2147483647]
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/The OpenSplice domain service/u_domain.c/630/0/1490679294.581541956
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : Service cmsoap disabled
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/sr_componentInfo.c/439/0/1490679294.587432007
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : Durability Client for spliced started
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/spliced::durabilityClientStart/spliced.c/350/1/1490679294.629577481
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490679294.642848156
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : dlopen of auto-translated name 'libdurability.so' failed: libsqlite3-ospl.so: cannot open shared object file: No such file or directory
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/51/0/1490679294.647804395
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : Could not start service durability as thread
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/694/0/1490679294.648482224
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:34:55 PDT 2017
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ddsi2 7f5ecbb67700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/286/0/1490679295.017051447
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 7fbeca34:92:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ddsi2 7f5ecbb67700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490679296.230175937
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 8f1dc4d:c4:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ddsi2 7f5ecbb67700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490679296.237929821
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 3ddfcc97:bf:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ddsi2 7f5ecbb67700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490679296.238085565
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 622802a1:92:1:2c7 non-responsive
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ddsi2 7f5ecbb67700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_transmit.c/815/0/1490679296.240989610
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 8f1dc4d:c4:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : recv 7f5ed8e3c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490679296.275650795
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 3ddfcc97:bf:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : recv 7f5ed8e3c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490679296.275842101
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 7fbeca34:92:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : recv 7f5ed8e3c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490679296.275920181
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:34:56 PDT 2017
+Description : writer a09b141:8e:1:2c2 considering reader 622802a1:92:1:2c7 responsive again
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : recv 7f5ed8e3c700
+Internals   : 6.6.2p1/af3a357/aec814d/ddsi2/q_receive.c/847/0/1490679296.282873977
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:35:18 PDT 2017
+Description : Missed heartbeat for node 166810442. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679318.051526603
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:35:19 PDT 2017
+Description : Missed heartbeat for node 535449070. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679319.512255794
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:35:26 PDT 2017
+Description : Missed heartbeat for node 673212789. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679326.429335020
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:35:28 PDT 2017
+Description : Missed heartbeat for node 1038077079. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679328.038303227
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:35:30 PDT 2017
+Description : Missed heartbeat for node 150068301. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679330.429459569
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:02 PDT 2017
+Description : Missed heartbeat for node 1652058952. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679542.142759450
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:07 PDT 2017
+Description : Missed heartbeat for node 1980280062. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679547.834020478
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:07 PDT 2017
+Description : Missed heartbeat for node 1178332955. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679547.933314542
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:08 PDT 2017
+Description : Missed heartbeat for node 1055661881. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679548.296605426
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:08 PDT 2017
+Description : Missed heartbeat for node 1479084994. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679548.713275753
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:09 PDT 2017
+Description : Missed heartbeat for node 1906434733. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679549.643755224
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:13 PDT 2017
+Description : Missed heartbeat for node 698551458. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679553.158846451
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:39:21 PDT 2017
+Description : Missed heartbeat for node 484554340. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490679561.464822965
+========================================================================================
+Report      : WARNING
+Date        : Mon Mar 27 22:44:42 PDT 2017
+Description : Processing of lease 0x7f5ec4001620 is behind schedule; expiry-time=4798.639537433s and lag=116.716037223s (actionId=5 and duration=2.000000000s). This is often an indication that the machine is too busy. The lease manager will continue to function normally.
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : watchdog 7f5ef428b700
+Internals   : 6.6.2p1/af3a357/aec814d/v_leaseManager/v_leaseManager.c/792/769/1490679882.323131696
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1791090071. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.599827828
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 729119281. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.627118621
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : ================================================
+              == The service 'ddsi2' has now terminated. 
+              ================================================
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ddsi2 7f5ecbb67700
+Internals   : 6.6.2p1/af3a357/aec814d/v_serviceChangeState/v_service.c/293/0/1490680118.630235694
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 922325496. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.649904064
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1300570649. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.683350940
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1491624986. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.719795012
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1554081136. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.746449206
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1555847646. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.766759511
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1623522997. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.804061925
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1646789281. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.824853813
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 1779049600. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.848100886
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 2033074571. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.885322789
+========================================================================================
+Report      : INFO
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Missed heartbeat for node 2143210036. (DCPSPublication is complete)
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Garbage Collector 7f5ed81fe700
+Internals   : 6.6.2p1/af3a357/aec814d/v_spliced/v_spliced.c/2358/769/1490680118.905605694

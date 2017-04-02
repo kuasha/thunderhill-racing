@@ -83,3 +83,89 @@ Node        : AKKA-DataScience-P50-01
 Process     : python3.5 <314>
 Thread      : spliced 7ff4d6a00700
 Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490131590.054673067
+========================================================================================
+Context     : DDS_free
+Date        : Mon Mar 27 22:08:08 PDT 2017
+Node        : ubuntu
+Process     : polysync-core-dynamic-driver <31005>
+Thread      : main thread 7fc2e3a75840
+Internals   : sac_objManag.c/217/6.6.2p1/af3a357/aec814d
+----------------------------------------------------------------------------------------
+Report      : Bad parameter: Invalid object reference
+Internals   : /home/dds/OvernightTests/overnight/ospli/tags/OSPL_V6_6_2p1-RC1/ubuntu1204-64/x86_64.linux-release-notest-inner/build/src/api/dcps/sac/code/sac_objManag.c/DDS__free/187/3/1490677688.657844870
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1490678905.068361278
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:28:25 PDT 2017
+Description : Problem opening 'durability'
+
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : spliced 7f9e1a179700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490678905.068424306
+========================================================================================
+Context     : DDS_DomainParticipant_get_discovered_participant_data
+Date        : Mon Mar 27 22:28:26 PDT 2017
+Node        : ubuntu
+Process     : python3.5 <37202>
+Thread      : main thread 7f9e1a164700
+Internals   : sac_domainParticipant.c/2067/6.6.2p1/af3a357/aec814d
+----------------------------------------------------------------------------------------
+Report      : Bad Parameter: instance handle = DDS_HANDLE_NIL
+Internals   : u_instanceHandleClaim/u_instanceHandle.c/118/774/1490678906.070987688
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : dlopen of 'durability' failed: durability: cannot open shared object file: No such file or directory
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/os_libraryOpen/os_library.c/62/0/1490679294.648364566
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:34:54 PDT 2017
+Description : Problem opening 'durability'
+
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : spliced 7f5ef4462700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/625/0/1490679294.648450883
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:44:42 PDT 2017
+Description : Unknown service 'splicedaemon' died
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ServiceManager 7f5ee3a22700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/serviceMonitor.c/65/0/1490679882.331891527
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:44:42 PDT 2017
+Description : Splice-daemon failed to renew its lease within the configured lease expiry-time (10.000000000). The lease renewal took 118.716264336 s.
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : OSPL Lease Renew Thread 7f5ed817d700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/spliced.c/170/0/1490679882.331967603
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:48:38 PDT 2017
+Description : Unknown service 'splicedaemon' died
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ServiceManager 7f5ee3a22700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/serviceMonitor.c/65/0/1490680118.630193547
+========================================================================================
+Report      : ERROR
+Date        : Mon Mar 27 22:48:48 PDT 2017
+Description : Unknown service 'splicedaemon' died
+Node        : ubuntu
+Process     : python3.5 <40324>
+Thread      : ServiceManager 7f5ee3a22700
+Internals   : 6.6.2p1/af3a357/aec814d/OpenSplice domain service/serviceMonitor.c/65/0/1490680128.239821559
