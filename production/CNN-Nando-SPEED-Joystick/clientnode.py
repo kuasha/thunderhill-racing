@@ -94,7 +94,8 @@ def make_prediction():
 					image_array = np.asarray(image)
 					image_array = cv2.cvtColor(image_array, cv2.COLOR_BGR2RGB)
 					image_array = cv2.resize(image_array, (160, 80))
-					prediction = model.predict(image_array[None, :, :, :], batch_size=1)[0]
+					transformed_image_array = image_array[None, :, :, :]
+					prediction = model.predict(transformed_image_array, batch_size=1)[0]
 					steering_angle = float(prediction[0])
 					throttle = 0.0 #float(prediction[1])
 					brake = 0.0 #float(prediction[2])
