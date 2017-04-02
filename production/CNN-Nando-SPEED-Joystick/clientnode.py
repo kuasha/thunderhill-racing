@@ -151,12 +151,11 @@ def batchgen(X, Y):
 		image = image.reshape(1, img_cols, img_rows, ch)
 		yield image, y
 
-def model_trainer(fileModelJSON, modelToSaveName):
+def model_trainer(fileModelJSON):
 	print("Model Trainer Thread Starting...")
 
 	fileWeights = fileModelJSON.replace('json', 'h5')
 	with open(fileModelJSON, 'r') as jfile:
-		print(jfile)
 		model = model_from_json(json.load(jfile))
 
 	adam = Adam(lr=0.00001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
@@ -181,20 +180,19 @@ def model_trainer(fileModelJSON, modelToSaveName):
 					nb_val_samples=val_size,
 					verbose=1)
 
-			print("Saving model to disk: ",modelToSaveName,"and",fileWeights)
-			h5Model = modelToSaveName + '.h5'
-			jsonModel = modelToSaveName + '.json'
-			if Path(h5Model).is_file():
-				os.remove(h5Model)
-
+			print("Saving model to disk: ",fileModelJSON,"and",fileWeights)
+			if Path(fileModelJSON).is_file():
+				os.remove(fileModelJSON)
 			json_string = model.to_json()
-			with open(jsonModel,'w' ) as f:
+			with open(fileModelJSON,'w' ) as f:
 				json.dump(json_string, f)
-
-			model.save(modelToSaveName)
+			if Path(fileWeights).is_file():
+				os.remove(fileWeights)
+			model.save_weights(fileWeights)
 		else:
 			print("Not Ready!  Sleeping for 5...")
 			sleep(5)
+
 
 if __name__ == '__main__':
 	#parser = argparse.ArgumentParser(description='Remote Driving')
@@ -211,7 +209,7 @@ if __name__ == '__main__':
 	thread2.start()
 
 	# start training thread
-	thread3 = threading.Thread(target = model_trainer, args=('model.json', 'modelTrained'))
+	thread3 = threading.Thread(target = model_trainer, args=('modelTrained.json'))
 	thread3.daemon = True
 	thread3.start()
 
