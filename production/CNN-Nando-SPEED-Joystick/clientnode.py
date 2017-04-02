@@ -17,7 +17,7 @@ import queue
 import threading
 
 
-f = h5py.File("psyncModel.h5", mode='r')
+f = h5py.File("model.h5", mode='r')
 model_version = f.attrs.get('keras_version')
 keras_version = str(keras_version).encode('utf8')
 
@@ -28,7 +28,7 @@ if model_version != keras_version:
 def customLoss(y_true, y_pred):
 	return K.mean(K.square(y_pred - y_true), axis=-1)
 
-model = load_model("psyncModel.h5", custom_objects={'customLoss':customLoss})
+model = load_model("model.h5", custom_objects={'customLoss':customLoss})
 graph = tf.get_default_graph()
 
 data_buffer = DataBuffer()
@@ -84,17 +84,16 @@ def make_prediction():
 					image_array = cv2.resize(image_array, (160, 80))
 					prediction = model.predict(image_array[None, :, :, :], batch_size=1)[0]
 					steering_angle = float(prediction[0])
-					throttle = float(prediction[1])
-					brake = float(prediction[2])
+					# throttle = float(prediction[1])
+					# brake = float(prediction[2])
 
-					if brake > 0.5:
-						throttle = -brake
-
-					# print('prediction: ',steering_angle, throttle, brake, speed)
+					# if brake > 0.5:
+					#	throttle = -brake
 
 					if res_queue.full(): # maintain a single most recent prediction in the queue
 						res_queue.get(False)
-					res_queue.put((steering_angle, throttle, brake))
+					# save only steering predictions
+					res_queue.put((steering_angle))
 
 
 def sendValues():
@@ -105,14 +104,15 @@ def sendValues():
 		try:
 			prediction = res_queue.get(block=False)
 			steer = c_float(prediction[0])
-			throttle = c_float(prediction[1])
-			brake = c_float(prediction[2])
+			# throttle = c_float(prediction[1])
+			# brake = c_float(prediction[2])
 			print("got values: ", steer, throttle, brake)
 		except queue.Empty:
 			pass
 		Node.steerCommand(steer)
-		Node.throttleCommand(throttle)
-		Node.brakeCommand(brake)
+		# use cruise control
+		# Node.throttleCommand(throttle)
+		# Node.brakeCommand(brake)
 		time.sleep(0.01)
 
 thread = threading.Thread(target=make_prediction, args=())
