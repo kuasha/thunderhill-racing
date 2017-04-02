@@ -9,12 +9,17 @@ import h5py
 from keras import __version__ as keras_version
 import tensorflow as tf
 from keras import backend as K
+from keras.models import model_from_json, load_model 
+from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array
+from keras.optimizers import Adam
+from keras import backend as K
 #from Preprocess import *
 import cv2
 import time
 from data_buffer import DataBuffer
 import queue
 import threading
+import json
 
 
 f = h5py.File("model.h5", mode='r')
@@ -146,11 +151,12 @@ def batchgen(X, Y):
 		image = image.reshape(1, img_cols, img_rows, ch)
 		yield image, y
 
-def model_trainer(fileModelJSON):
+def model_trainer(fileModelJSON, modelToSaveName):
 	print("Model Trainer Thread Starting...")
 
 	fileWeights = fileModelJSON.replace('json', 'h5')
 	with open(fileModelJSON, 'r') as jfile:
+		print(jfile)
 		model = model_from_json(json.load(jfile))
 
 	adam = Adam(lr=0.00001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0)
@@ -175,24 +181,26 @@ def model_trainer(fileModelJSON):
 					nb_val_samples=val_size,
 					verbose=1)
 
-			print("Saving model to disk: ",fileModelJSON,"and",fileWeights)
-			if Path(fileModelJSON).is_file():
-				os.remove(fileModelJSON)
+			print("Saving model to disk: ",modelToSaveName,"and",fileWeights)
+			h5Model = modelToSaveName + '.h5'
+			jsonModel = modelToSaveName + '.json'
+			if Path(h5Model).is_file():
+				os.remove(h5Model)
+
 			json_string = model.to_json()
-			with open(fileModelJSON,'w' ) as f:
+			with open(jsonModel,'w' ) as f:
 				json.dump(json_string, f)
-			if Path(fileWeights).is_file():
-				os.remove(fileWeights)
-			model.save_weights(fileWeights)
+
+			model.save(modelToSaveName)
 		else:
 			print("Not Ready!  Sleeping for 5...")
 			sleep(5)
 
 if __name__ == '__main__':
-	parser = argparse.ArgumentParser(description='Remote Driving')
-	parser.add_argument('model', type=str,
-		help='Path to model definition json. Model weights should be on the same path.')
-	args = parser.parse_args()
+	#parser = argparse.ArgumentParser(description='Remote Driving')
+	#parser.add_argument('model', type=str,
+	#	help='Path to model definition json. Model weights should be on the same path.')
+	#args = parser.parse_args()
 
 	thread = threading.Thread(target=make_prediction, args=())
 	thread.daemon = True
@@ -203,7 +211,7 @@ if __name__ == '__main__':
 	thread2.start()
 
 	# start training thread
-	thread3 = Thread(target = model_trainer, args=(args.model,))
+	thread3 = threading.Thread(target = model_trainer, args=('model.json', 'modelTrained'))
 	thread3.daemon = True
 	thread3.start()
 
