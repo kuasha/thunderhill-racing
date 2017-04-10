@@ -39,4 +39,4 @@ In the Client Node, there are three distictive parallel threads:
 
 ## Python Trainer:
 
-
+Divided into two categories
